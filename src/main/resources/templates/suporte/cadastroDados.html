@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+        <form th:action="@{/cadastrar}" method="POST">
+            Nome: <input type="text" name="nome" th:value="${cliente.nome}"/>
+            <br />
+
+            CPF: <input type="text" name="cpf" th:value="${cliente.cpf}"/>
+            <br />
+
+            Senha: <input type="text" name="senha" th:value="${conta.senha}"/>
+            <br />
+
+            Data de Nascimento: <input type="date" name="dataString" th:value="${cliente.dataString}"/>
+            <br />
+
+            Email: <input type="text" name="email" th:value="${cliente.email}"/>
+            <br />
+
+            Telefone: <input type="text" name="telefone" th:value="${cliente.telefone}"/>
+            <br />
+
+            Logradouro: <input type="text" name="logradouro" th:value="${endereco.logradouro}"/>
+            <br />
+
+            Numero: <input type="text" name="numero" th:value="${endereco.numero}"/>
+            <br />
+
+            Bairro: <input type="text" name="bairro" th:value="${endereco.bairro}"/>
+            <br />
+
+            Cidade: <input type="text" name="cidade" th:value="${endereco.cidade}"/>
+            <br />
+
+            Estado: <input type="text" name="estado" th:value="${endereco.estado}"/>
+            <br />
+
+            CEP: <input type="text" name="cep" th:value="${endereco.cep}"/>
+            <br />
+
+            <input type="submit" value="Cadastrar">
+        </form>
+</body>
+</html>

@@ -1,0 +1,6144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<title>cadastro</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: cadastro;
+		--web-view-id: cadastro;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: cadastro;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	::placeholder {
+   		color: #FA721E;
+   		margin: 5px;
+	}
+	.entradaTipoUm {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+		text-align: left;
+		text-indent: 10px;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: #121212;
+		border-color: #121212;
+		border-style: solid;
+  		border-width: 2px;
+	}
+	.entradaTipoDois {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+		position: absolute;
+		overflow: visible;
+		width: 120.076px;
+    	height: 48px;
+		left: 0px;
+		top: 0px;
+		text-align: left;
+		text-indent: 10px;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: #121212;
+		border-color: #121212;
+		border-style: solid;
+  		border-width: 2px;
+		}
+	.entradaTipoTres {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+		position: absolute;
+		overflow: visible;
+		width: 190.926px;
+    	height: 48px;
+		left: 0px;
+		top: 0px;
+		text-align: left;
+		text-indent: 10px;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: #121212;
+		border-color: #121212;
+		border-style: solid;
+  		border-width: 2px;
+	}
+	#cadastro {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(235,235,235,1);
+		overflow: hidden;
+		--web-view-name: cadastro;
+		--web-view-id: cadastro;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-deep-linking: true;
+	}
+	#METADATA {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Sign_Up {
+		position: absolute;
+		width: 1600px;
+		height: 900px;
+		left: 160px;
+		top: 90px;
+		overflow: visible;
+	}
+	#METADATA_l {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Card_ {
+		position: absolute;
+		width: 1600px;
+		height: 900px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_n {
+		display: none;
+		left: 331.377px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDEFAULT {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDEFAULT {
+		filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.102));
+		position: absolute;
+		overflow: visible;
+		width: 1608px;
+		height: 908px;
+		left: 0px;
+		top: 0px;
+	}
+	#Illustration {
+		position: absolute;
+		width: 682.294px;
+		height: 648.144px;
+		left: 857.624px;
+		top: 157.319px;
+		overflow: visible;
+	}
+	#METADATA_q {
+		display: none;
+		left: 128.771px;
+		top: 61.991px;
+		position: absolute;
+		overflow: hidden;
+		width: 18.915px;
+		height: 17.91547966003418px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Path_FILLSTYLE1LIGHT {
+		fill: #FA721E;
+	}
+	.Path_FILLSTYLE1LIGHT {
+		overflow: visible;
+		position: absolute;
+		width: 540.311px;
+		height: 400.37px;
+		transform: translate(0px, 0px) matrix(1,0,0,1,65.9761,123.8872) rotate(-38deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#Path_FILLSTYLE1BRAND {
+		opacity: 0.66;
+		fill: rgba(18,18,18,1);
+		stroke: rgba(18,18,18,0.4);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_FILLSTYLE1BRAND {
+		overflow: visible;
+		position: absolute;
+		width: 376.857px;
+		height: 546.612px;
+		left: 128.345px;
+		top: 84.015px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1LIGHT_t {
+		fill: #FA721E;
+	}
+	.Path_FILLSTYLE1LIGHT_t {
+		overflow: visible;
+		position: absolute;
+		width: 335.089px;
+		height: 514.68px;
+		left: 148.4px;
+		top: 93.899px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1BRAND_u {
+		fill: #FA721E;
+	}
+	.Path_FILLSTYLE1BRAND_u {
+		position: absolute;
+		overflow: visible;
+		width: 62.158px;
+		height: 62.568px;
+		left: 576.814px;
+		top: 159.452px;
+	}
+	#Path_FILLSTYLE1TEXT {
+		fill: rgba(198,198,198,1);
+	}
+	.Path_FILLSTYLE1TEXT {
+		overflow: visible;
+		position: absolute;
+		width: 20.269px;
+		height: 28.904px;
+		left: 627.065px;
+		top: 579.362px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1TEXT_w {
+		fill: rgba(198,198,198,1);
+	}
+	.Path_FILLSTYLE1TEXT_w {
+		overflow: visible;
+		position: absolute;
+		width: 14.357px;
+		height: 25.504px;
+		left: 557.813px;
+		top: 582.762px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1TEXT_x {
+		fill: rgba(198,198,198,1);
+	}
+	.Path_FILLSTYLE1TEXT_x {
+		overflow: visible;
+		position: absolute;
+		width: 27.87px;
+		height: 79.058px;
+		left: 617.774px;
+		top: 311.58px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1TEXT_y {
+		fill: rgba(198,198,198,1);
+	}
+	.Path_FILLSTYLE1TEXT_y {
+		position: absolute;
+		overflow: visible;
+		width: 47.294px;
+		height: 47.606px;
+		left: 573.858px;
+		top: 176.409px;
+	}
+	#Path_FILLSTYLE1TEXT_z {
+		fill: rgba(198,198,198,1);
+	}
+	.Path_FILLSTYLE1TEXT_z {
+		overflow: visible;
+		position: absolute;
+		width: 34.382px;
+		height: 41.616px;
+		left: 588.215px;
+		top: 202.763px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1FOREGROUND {
+		fill: rgba(18,18,18,1);
+	}
+	.Path_FILLSTYLE1FOREGROUND {
+		overflow: visible;
+		position: absolute;
+		width: 112.225px;
+		height: 357.429px;
+		left: 535.125px;
+		top: 232.462px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1FOREGROUND_ {
+		fill: rgba(18,18,18,1);
+	}
+	.Path_FILLSTYLE1FOREGROUND_ {
+		overflow: visible;
+		position: absolute;
+		width: 22.533px;
+		height: 63.099px;
+		left: 625.787px;
+		top: 254.62px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1TEXT_ {
+		fill: rgba(198,198,198,1);
+	}
+	.Path_FILLSTYLE1TEXT_ {
+		overflow: visible;
+		position: absolute;
+		width: 78.153px;
+		height: 113.713px;
+		left: 490.692px;
+		top: 299.652px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1FOREGROUND_ba {
+		fill: rgba(18,18,18,1);
+	}
+	.Path_FILLSTYLE1FOREGROUND_ba {
+		overflow: visible;
+		position: absolute;
+		width: 32.693px;
+		height: 37.151px;
+		left: 545.916px;
+		top: 592.793px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1FOREGROUND_bb {
+		fill: rgba(18,18,18,1);
+	}
+	.Path_FILLSTYLE1FOREGROUND_bb {
+		overflow: visible;
+		position: absolute;
+		width: 32.693px;
+		height: 37.151px;
+		left: 623.158px;
+		top: 592.793px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1FOREGROUND_bc {
+		fill: rgba(18,18,18,1);
+	}
+	.Path_FILLSTYLE1FOREGROUND_bc {
+		overflow: visible;
+		position: absolute;
+		width: 30.615px;
+		height: 63.298px;
+		left: 546.219px;
+		top: 250.369px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1BRAND_ {
+		fill: #FA721E;
+	}
+	.Path_FILLSTYLE1BRAND_ {
+		position: absolute;
+		overflow: visible;
+		width: 62.158px;
+		height: 62.568px;
+		left: 610.483px;
+		top: 118.262px;
+	}
+	#Path_FILLSTYLE1BRAND_ba {
+		fill: #FA721E;
+	}
+	.Path_FILLSTYLE1BRAND_ba {
+		overflow: visible;
+		position: absolute;
+		width: 61.919px;
+		height: 40.213px;
+		left: 620.375px;
+		top: 146.195px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_FILLSTYLE1BRAND_bb {
+		fill: #FA721E;
+	}
+	.Path_FILLSTYLE1BRAND_bb {
+		position: absolute;
+		overflow: visible;
+		width: 45.582px;
+		height: 45.883px;
+		left: 593.39px;
+		top: 173.009px;
+	}
+	#Path_FILLSTYLE1BRAND_bc {
+		fill: #FA721E;
+	}
+	.Path_FILLSTYLE1BRAND_bc {
+		position: absolute;
+		overflow: visible;
+		width: 40.403px;
+		height: 31.805px;
+		left: 576.814px;
+		top: 171.444px;
+	}
+	#Path_FILLSTYLE1TEXT_ba {
+		fill: rgba(198,198,198,1);
+	}
+	.Path_FILLSTYLE1TEXT_ba {
+		position: absolute;
+		overflow: visible;
+		width: 7.668px;
+		height: 13.656px;
+		left: 587.793px;
+		top: 196.815px;
+	}
+	#Button_ {
+		position: absolute;
+		width: 328px;
+		height: 48px;
+		left: 453.325px;
+		top: 611px;
+		overflow: visible;
+	}
+	#METADATA_bc {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSLabelSIZE {
+		fill: #FA721E;
+	}
+	.Area_DISPLAY_ELEMENTSLabelSIZE {
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+
+	.Botao{
+    cursor: pointer;
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+		fill: #FA721E;
+		background: #FA721E;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(252,252,252,1);
+	}
+
+	#Label {
+		left: 121px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 87px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(252,252,252,1);
+	}
+	#Icon_ {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 292px;
+		top: 14px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_bg {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSLabelICON {
+		opacity: 0;
+		fill: rgba(252,252,252,1);
+	}
+	.Area_DISPLAY_ELEMENTSLabelICON {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon {
+		position: absolute;
+		width: 17.42px;
+		height: 15.193px;
+		left: 1.291px;
+		top: 2.499px;
+		overflow: visible;
+	}
+	#Path {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(252,252,252,1);
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path {
+		overflow: visible;
+		position: absolute;
+		width: 19.086px;
+		height: 16.86px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Input_ {
+		position: absolute;
+		width: 328px;
+		height: 48px;
+		left: 60px;
+		top: 528px;
+		overflow: visible;
+	}
+	#METADATA_bl {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST {
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 156px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__bo {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 294px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_bp {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_br {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_bs {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_bs {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_bu {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__bv {
+		position: absolute;
+		width: 120.076px;
+		height: 48px;
+		left: 453.325px;
+		top: 364px;
+		overflow: visible;
+	}
+	#METADATA_bw {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_bx {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_bx {
+		position: absolute;
+		overflow: visible;
+		width: 120.076px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_by {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__bz {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 86.076px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_b {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_b {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_b {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_b {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_b {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_b {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_b {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_b {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_b {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__b {
+		position: absolute;
+		width: 190.926px;
+		height: 48px;
+		left: 590.4px;
+		top: 447px;
+		overflow: visible;
+	}
+	#METADATA_ca {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_b {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_b {
+		position: absolute;
+		overflow: visible;
+		width: 190.926px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_b {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__ca {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 156.926px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_cb {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_cc {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_cc {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_cd {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_ce {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_ce {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_cf {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_cf {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_cg {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__ch {
+		position: absolute;
+		width: 190.926px;
+		height: 48px;
+		left: 590.4px;
+		top: 364px;
+		overflow: visible;
+	}
+	#METADATA_ci {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_cj {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_cj {
+		position: absolute;
+		overflow: visible;
+		width: 190.926px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_ck {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 31px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__cl {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 156.926px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_cm {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_cn {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_cn {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_co {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_cp {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_cp {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_cq {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_cq {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_cr {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__cs {
+		position: absolute;
+		width: 328px;
+		height: 48px;
+		left: 60px;
+		top: 446px;
+		overflow: visible;
+	}
+	#METADATA_ct {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_cu {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_cu {
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_cv {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 49px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__cw {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 294px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_cx {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_cy {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_cy {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_cz {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_c {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_c {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_c {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_c {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_c {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__c {
+		position: absolute;
+		width: 328px;
+		height: 48px;
+		left: 453.325px;
+		top: 282px;
+		overflow: visible;
+	}
+	#METADATA_c {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_c {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_c {
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_c {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 92px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__c {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 294px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_da {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_c {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_c {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_da {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_db {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_db {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_dc {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_dc {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_dd {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__de {
+		position: absolute;
+		width: 328px;
+		height: 48px;
+		left: 453.325px;
+		top: 529px;
+		overflow: visible;
+	}
+	#METADATA_df {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_dg {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_dg {
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_dh {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__di {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 294px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_dj {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_dk {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_dk {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_dl {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_dm {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_dm {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_dn {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_dn {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_do {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__dp {
+		position: absolute;
+		width: 120.076px;
+		height: 48px;
+		left: 453.325px;
+		top: 446px;
+		overflow: visible;
+	}
+	#METADATA_dq {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_dr {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_dr {
+		position: absolute;
+		overflow: visible;
+		width: 120.076px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_ds {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__dt {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 86.076px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_du {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_dv {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_dv {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_dw {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_dx {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_dx {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_dy {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_dy {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_dz {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__d {
+		position: absolute;
+		width: 328px;
+		height: 48px;
+		left: 60px;
+		top: 364px;
+		overflow: visible;
+	}
+	#METADATA_d {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_d {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_d {
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_d {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 31px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__d {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 294px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_ea {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_d {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_d {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_d {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_d {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_d {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_d {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_d {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_ea {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__eb {
+		position: absolute;
+		width: 328px;
+		height: 48px;
+		left: 60px;
+		top: 693px;
+		overflow: visible;
+	}
+	#METADATA_ec {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_ed {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_ed {
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_ee {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__ef {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 294px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_eg {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_eh {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_eh {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_ei {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_ej {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_ej {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_ek {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_ek {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_el {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__em {
+		position: absolute;
+		width: 328px;
+		height: 48px;
+		left: 60px;
+		top: 282px;
+		overflow: visible;
+	}
+	#METADATA_en {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_eo {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_eo {
+
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_ep {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 126px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__eq {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 294px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_er {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_es {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_es {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_et {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_eu {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_eu {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_ev {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_ev {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_ew {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__ex {
+		position: absolute;
+		width: 328px;
+		height: 48px;
+		left: 60px;
+		top: 611px;
+		overflow: visible;
+	}
+	#METADATA_ey {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultST_ez {
+		fill: rgba(252,252,252,1);
+		stroke: rgba(18,18,18,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_DISPLAY_ELEMENTSDefaultST_ez {
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_e {
+		left: 16px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 143px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(18,18,18,1);
+	}
+	#Icon__e {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 294px;
+		top: 15px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_e {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_e {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_e {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_e {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_e {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_e {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_e {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_e {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_e {
+		display: none;
+		left: 0px;
+		top: -25px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__e {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		left: -1519px;
+		top: -90px;
+		overflow: visible;
+	}
+	#METADATA_fa {
+		display: none;
+		left: 1579px;
+		top: 355.579px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Icon__fa {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 1701px;
+		top: 370.579px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_fb {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSDefaultIC_fc {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSDefaultIC_fc {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_fd {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: 2.5px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#Path_fe {
+		fill: rgba(0,0,0,0);
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_fe {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+	}
+	#Line_ff {
+		fill: transparent;
+		stroke: #FA721E;
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_ff {
+		overflow: visible;
+		position: absolute;
+		width: 5.982px;
+		height: 5.982px;
+		left: 11.375px;
+		top: 11.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_fg {
+		display: none;
+		left: 1579px;
+		top: 330.579px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(18,18,18,1);
+		letter-spacing: 0.4px;
+	}
+	#Create_an_account_TAGA {
+		left: 360.825px;
+		top: 162.133px;
+		position: absolute;
+		overflow: visible;
+		width: 186px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		color: #FA721E;
+	}
+	#New_user_TAGH6 {
+		left: 60px;
+		top: 162.133px;
+		position: absolute;
+		overflow: visible;
+		width: 295px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 28px;
+		color: rgba(18,18,18,1);
+	}
+	#New_user_TAGH6_fj {
+		left: 60px;
+		top: 234px;
+		position: absolute;
+		overflow: visible;
+		width: 186px;
+		white-space: nowrap;
+		line-height: 26px;
+		margin-top: -1px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		color: rgba(18,18,18,1);
+	}
+	#New_user_TAGH6_fk {
+		left: 453.325px;
+		top: 234px;
+		position: absolute;
+		overflow: visible;
+		width: 116px;
+		white-space: nowrap;
+		line-height: 26px;
+		margin-top: -1px;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		color: rgba(18,18,18,1);
+	}
+	#Title_TAGH4 {
+		left: 60px;
+		top: 39px;
+		position: absolute;
+		overflow: visible;
+		width: 461px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Bradesco Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 56px;
+		color: rgba(18,18,18,1);
+	}
+	#Circle_Button_ {
+		position: absolute;
+		width: 48px;
+		height: 48px;
+		left: 1520px;
+		top: 32px;
+		overflow: visible;
+	}
+	#METADATA_fn {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Icon__fo {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 14px;
+		top: 14px;
+		overflow: visible;
+	}
+	#METADATA_fp {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_ICONfeatherxSIZEMEDIUMSTA {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_ICONfeatherxSIZEMEDIUMSTA {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Grupo_15 {
+		position: absolute;
+		width: 48px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Area_SIZEMEDIUMSTATEDEFAULTSTY {
+		fill: rgba(252,252,252,1);
+		stroke: #FA721E;
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_SIZEMEDIUMSTATEDEFAULTSTY {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#x {
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		left: 19px;
+		top: 19px;
+		overflow: visible;
+	}
+	#Caminho_1 {
+		fill: #FA721E;
+	}
+	.Caminho_1 {
+		overflow: visible;
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Caminho_2 {
+		fill: #FA721E;
+	}
+	.Caminho_2 {
+		overflow: visible;
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+</style>
+<script id="applicationScript">
+///////////////////////////////////////
+// INITIALIZATION
+///////////////////////////////////////
+
+/**
+ * Functionality for scaling, showing by media query, and navigation between multiple pages on a single page. 
+ * Code subject to change.
+ **/
+
+if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set console
+
+var Application = function() {
+	// event constants
+	this.prefix = "--web-";
+	this.NAVIGATION_CHANGE = "viewChange";
+	this.VIEW_NOT_FOUND = "viewNotFound";
+	this.VIEW_CHANGE = "viewChange";
+	this.VIEW_CHANGING = "viewChanging";
+	this.STATE_NOT_FOUND = "stateNotFound";
+	this.APPLICATION_COMPLETE = "applicationComplete";
+	this.APPLICATION_RESIZE = "applicationResize";
+	this.SIZE_STATE_NAME = "data-is-view-scaled";
+	this.STATE_NAME = this.prefix + "state";
+
+	this.lastTrigger = null;
+	this.lastView = null;
+	this.lastState = null;
+	this.lastOverlay = null;
+	this.currentView = null;
+	this.currentState = null;
+	this.currentOverlay = null;
+	this.currentQuery = {index: 0, rule: null, mediaText: null, id: null};
+	this.inclusionQuery = "(min-width: 0px)";
+	this.exclusionQuery = "none and (min-width: 99999px)";
+	this.LastModifiedDateLabelName = "LastModifiedDateLabel";
+	this.viewScaleSliderId = "ViewScaleSliderInput";
+	this.pageRefreshedName = "showPageRefreshedNotification";
+	this.application = null;
+	this.applicationStylesheet = null;
+	this.showByMediaQuery = null;
+	this.mediaQueryDictionary = {};
+	this.viewsDictionary = {};
+	this.addedViews = [];
+	this.viewStates = [];
+	this.views = [];
+	this.viewIds = [];
+	this.viewQueries = {};
+	this.overlays = {};
+	this.overlayIds = [];
+	this.numberOfViews = 0;
+	this.verticalPadding = 0;
+	this.horizontalPadding = 0;
+	this.stateName = null;
+	this.viewScale = 1;
+	this.viewLeft = 0;
+	this.viewTop = 0;
+	this.horizontalScrollbarsNeeded = false;
+	this.verticalScrollbarsNeeded = false;
+
+	// view settings
+	this.showUpdateNotification = false;
+	this.showNavigationControls = false;
+	this.scaleViewsToFit = false;
+	this.scaleToFitOnDoubleClick = false;
+	this.actualSizeOnDoubleClick = false;
+	this.scaleViewsOnResize = false;
+	this.navigationOnKeypress = false;
+	this.showViewName = false;
+	this.enableDeepLinking = true;
+	this.refreshPageForChanges = false;
+	this.showRefreshNotifications = true;
+
+	// view controls
+	this.scaleViewSlider = null;
+	this.lastModifiedLabel = null;
+	this.supportsPopState = false; // window.history.pushState!=null;
+	this.initialized = false;
+
+	// refresh properties
+	this.refreshDuration = 250;
+	this.lastModifiedDate = null;
+	this.refreshRequest = null;
+	this.refreshInterval = null;
+	this.refreshContent = null;
+	this.refreshContentSize = null;
+	this.refreshCheckContent = false;
+	this.refreshCheckContentSize = false;
+
+	var self = this;
+
+	self.initialize = function(event) {
+		var view = self.getVisibleView();
+		var views = self.getVisibleViews();
+		if (view==null) view = self.getInitialView();
+		self.collectViews();
+		self.collectOverlays();
+		self.collectMediaQueries();
+
+		for (let index = 0; index < views.length; index++) {
+			var view = views[index];
+			self.setViewOptions(view);
+			self.setViewVariables(view);
+			self.centerView(view);
+		}
+
+		// sometimes the body size is 0 so we call this now and again later
+		if (self.initialized) {
+			window.addEventListener(self.NAVIGATION_CHANGE, self.viewChangeHandler);
+			window.addEventListener("keyup", self.keypressHandler);
+			window.addEventListener("keypress", self.keypressHandler);
+			window.addEventListener("resize", self.resizeHandler);
+			window.document.addEventListener("dblclick", self.doubleClickHandler);
+
+			if (self.supportsPopState) {
+				window.addEventListener('popstate', self.popStateHandler);
+			}
+			else {
+				window.addEventListener('hashchange', self.hashChangeHandler);
+			}
+
+			// we are ready to go
+			window.dispatchEvent(new Event(self.APPLICATION_COMPLETE));
+		}
+
+		if (self.initialized==false) {
+			if (self.enableDeepLinking) {
+				self.syncronizeViewToURL();
+			} 
+	
+			if (self.refreshPageForChanges) {
+				self.setupRefreshForChanges();
+			}
+	
+			self.initialized = true;
+		}
+		
+		if (self.scaleViewsToFit) {
+			self.viewScale = self.scaleViewToFit(view);
+			
+			if (self.viewScale<0) {
+				setTimeout(self.scaleViewToFit, 500, view);
+			}
+		}
+		else if (view) {
+			self.viewScale = self.getViewScaleValue(view);
+			self.centerView(view);
+			self.updateSliderValue(self.viewScale);
+		}
+		else {
+			// no view found
+		}
+	
+		if (self.showUpdateNotification) {
+			self.showNotification();
+		}
+
+		//"addEventListener" in window ? null : window.addEventListener = window.attachEvent;
+		//"addEventListener" in document ? null : document.addEventListener = document.attachEvent;
+	}
+
+
+	///////////////////////////////////////
+	// AUTO REFRESH 
+	///////////////////////////////////////
+
+	self.setupRefreshForChanges = function() {
+		self.refreshRequest = new XMLHttpRequest();
+
+		if (!self.refreshRequest) {
+			return false;
+		}
+
+		// get document start values immediately
+		self.requestRefreshUpdate();
+	}
+
+	/**
+	 * Attempt to check the last modified date by the headers 
+	 * or the last modified property from the byte array (experimental)
+	 **/
+	self.requestRefreshUpdate = function() {
+		var url = document.location.href;
+		var protocol = window.location.protocol;
+		var method;
+		
+		try {
+
+			if (self.refreshCheckContentSize) {
+				self.refreshRequest.open('HEAD', url, true);
+			}
+			else if (self.refreshCheckContent) {
+				self.refreshContent = document.documentElement.outerHTML;
+				self.refreshRequest.open('GET', url, true);
+				self.refreshRequest.responseType = "text";
+			}
+			else {
+
+				// get page last modified date for the first call to compare to later
+				if (self.lastModifiedDate==null) {
+
+					// File system does not send headers in FF so get blob if possible
+					if (protocol=="file:") {
+						self.refreshRequest.open("GET", url, true);
+						self.refreshRequest.responseType = "blob";
+					}
+					else {
+						self.refreshRequest.open("HEAD", url, true);
+						self.refreshRequest.responseType = "blob";
+					}
+
+					self.refreshRequest.onload = self.refreshOnLoadOnceHandler;
+
+					// In some browsers (Chrome & Safari) this error occurs at send: 
+					// 
+					// Chrome - Access to XMLHttpRequest at 'file:///index.html' from origin 'null' 
+					// has been blocked by CORS policy: 
+					// Cross origin requests are only supported for protocol schemes: 
+					// http, data, chrome, chrome-extension, https.
+					// 
+					// Safari - XMLHttpRequest cannot load file:///Users/user/Public/index.html. Cross origin requests are only supported for HTTP.
+					// 
+					// Solution is to run a local server, set local permissions or test in another browser
+					self.refreshRequest.send(null);
+
+					// In MS browsers the following behavior occurs possibly due to an AJAX call to check last modified date: 
+					// 
+					// DOM7011: The code on this page disabled back and forward caching.
+
+					// In Brave (Chrome) error when on the server
+					// index.js:221 HEAD https://www.example.com/ net::ERR_INSUFFICIENT_RESOURCES
+					// self.refreshRequest.send(null);
+
+				}
+				else {
+					self.refreshRequest = new XMLHttpRequest();
+					self.refreshRequest.onreadystatechange = self.refreshHandler;
+					self.refreshRequest.ontimeout = function() {
+						self.log("Couldn't find page to check for updates");
+					}
+					
+					var method;
+					if (protocol=="file:") {
+						method = "GET";
+					}
+					else {
+						method = "HEAD";
+					}
+
+					//refreshRequest.open('HEAD', url, true);
+					self.refreshRequest.open(method, url, true);
+					self.refreshRequest.responseType = "blob";
+					self.refreshRequest.send(null);
+				}
+			}
+		}
+		catch (error) {
+			self.log("Refresh failed for the following reason:")
+			self.log(error);
+		}
+	}
+
+	self.refreshHandler = function() {
+		var contentSize;
+
+		try {
+
+			if (self.refreshRequest.readyState === XMLHttpRequest.DONE) {
+				
+				if (self.refreshRequest.status === 2 || 
+					self.refreshRequest.status === 200) {
+					var pageChanged = false;
+
+					self.updateLastModifiedLabel();
+
+					if (self.refreshCheckContentSize) {
+						var lastModifiedHeader = self.refreshRequest.getResponseHeader("Last-Modified");
+						contentSize = self.refreshRequest.getResponseHeader("Content-Length");
+						//lastModifiedDate = refreshRequest.getResponseHeader("Last-Modified");
+						var headers = self.refreshRequest.getAllResponseHeaders();
+						var hasContentHeader = headers.indexOf("Content-Length")!=-1;
+						
+						if (hasContentHeader) {
+							contentSize = self.refreshRequest.getResponseHeader("Content-Length");
+
+							// size has not been set yet
+							if (self.refreshContentSize==null) {
+								self.refreshContentSize = contentSize;
+								// exit and let interval call this method again
+								return;
+							}
+
+							if (contentSize!=self.refreshContentSize) {
+								pageChanged = true;
+							}
+						}
+					}
+					else if (self.refreshCheckContent) {
+
+						if (self.refreshRequest.responseText!=self.refreshContent) {
+							pageChanged = true;
+						}
+					}
+					else {
+						lastModifiedHeader = self.getLastModified(self.refreshRequest);
+
+						if (self.lastModifiedDate!=lastModifiedHeader) {
+							self.log("lastModifiedDate:" + self.lastModifiedDate + ",lastModifiedHeader:" +lastModifiedHeader);
+							pageChanged = true;
+						}
+
+					}
+
+					
+					if (pageChanged) {
+						clearInterval(self.refreshInterval);
+						self.refreshUpdatedPage();
+						return;
+					}
+
+				}
+				else {
+					self.log('There was a problem with the request.');
+				}
+
+			}
+		}
+		catch( error ) {
+			//console.log('Caught Exception: ' + error);
+		}
+	}
+
+	self.refreshOnLoadOnceHandler = function(event) {
+
+		// get the last modified date
+		if (self.refreshRequest.response) {
+			self.lastModifiedDate = self.getLastModified(self.refreshRequest);
+
+			if (self.lastModifiedDate!=null) {
+
+				if (self.refreshInterval==null) {
+					self.refreshInterval = setInterval(self.requestRefreshUpdate, self.refreshDuration);
+				}
+			}
+			else {
+				self.log("Could not get last modified date from the server");
+			}
+		}
+	}
+
+	self.refreshUpdatedPage = function() {
+		if (self.showRefreshNotifications) {
+			var date = new Date().setTime((new Date().getTime()+10000));
+			document.cookie = encodeURIComponent(self.pageRefreshedName) + "=true" + "; max-age=6000;" + " path=/";
+		}
+
+		document.location.reload(true);
+	}
+
+	self.showNotification = function(duration) {
+		var notificationID = self.pageRefreshedName+"ID";
+		var notification = document.getElementById(notificationID);
+		if (duration==null) duration = 4000;
+
+		if (notification!=null) {return;}
+
+		notification = document.createElement("div");
+		notification.id = notificationID;
+		notification.textContent = "PAGE UPDATED";
+		var styleRule = ""
+		styleRule = "position: fixed; padding: 7px 16px 6px 16px; font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; left: 50%;";
+		styleRule += "top: 20px; background-color: rgba(0,0,0,.5); border-radius: 12px; color:rgb(235, 235, 235); transition: all 2s linear;";
+		styleRule += "transform: translateX(-50%); letter-spacing: .5px; filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, .1)); cursor: pointer";
+		notification.setAttribute("style", styleRule);
+
+		notification.className = "PageRefreshedClass";
+		notification.addEventListener("click", function() {
+			notification.parentNode.removeChild(notification);
+		});
+		
+		document.body.appendChild(notification);
+
+		setTimeout(function() {
+			notification.style.opacity = "0";
+			notification.style.filter = "drop-shadow( 0px 0px 0px rgba(0,0,0, .5))";
+			setTimeout(function() {
+				try {
+					notification.parentNode.removeChild(notification);
+				} catch(error) {}
+			}, duration)
+		}, duration);
+
+		document.cookie = encodeURIComponent(self.pageRefreshedName) + "=; max-age=1; path=/";
+	}
+
+	/**
+	 * Get the last modified date from the header 
+	 * or file object after request has been received
+	 **/
+	self.getLastModified = function(request) {
+		var date;
+
+		// file protocol - FILE object with last modified property
+		if (request.response && request.response.lastModified) {
+			date = request.response.lastModified;
+		}
+		
+		// http protocol - check headers
+		if (date==null) {
+			date = request.getResponseHeader("Last-Modified");
+		}
+
+		return date;
+	}
+
+	self.updateLastModifiedLabel = function() {
+		var labelValue = "";
+		
+		if (self.lastModifiedLabel==null) {
+			self.lastModifiedLabel = document.getElementById("LastModifiedLabel");
+		}
+
+		if (self.lastModifiedLabel) {
+			var seconds = parseInt(((new Date().getTime() - Date.parse(document.lastModified)) / 1000 / 60) * 100 + "");
+			var minutes = 0;
+			var hours = 0;
+
+			if (seconds < 60) {
+				seconds = Math.floor(seconds/10)*10;
+				labelValue = seconds + " seconds";
+			}
+			else {
+				minutes = parseInt((seconds/60) + "");
+
+				if (minutes>60) {
+					hours = parseInt((seconds/60/60) +"");
+					labelValue += hours==1 ? " hour" : " hours";
+				}
+				else {
+					labelValue = minutes+"";
+					labelValue += minutes==1 ? " minute" : " minutes";
+				}
+			}
+			
+			if (seconds<10) {
+				labelValue = "Updated now";
+			}
+			else {
+				labelValue = "Updated " + labelValue + " ago";
+			}
+
+			if (self.lastModifiedLabel.firstElementChild) {
+				self.lastModifiedLabel.firstElementChild.textContent = labelValue;
+
+			}
+			else if ("textContent" in self.lastModifiedLabel) {
+				self.lastModifiedLabel.textContent = labelValue;
+			}
+		}
+	}
+
+	self.getShortString = function(string, length) {
+		if (length==null) length = 30;
+		string = string!=null ? string.substr(0, length).replace(/\n/g, "") : "[String is null]";
+		return string;
+	}
+
+	self.getShortNumber = function(value, places) {
+		if (places==null || places<1) places = 4;
+		value = Math.round(value * Math.pow(10,places)) / Math.pow(10, places);
+		return value;
+	}
+
+	///////////////////////////////////////
+	// NAVIGATION CONTROLS
+	///////////////////////////////////////
+
+	self.updateViewLabel = function() {
+		var viewNavigationLabel = document.getElementById("ViewNavigationLabel");
+		var view = self.getVisibleView();
+		var viewIndex = view ? self.getViewIndex(view) : -1;
+		var viewName = view ? self.getViewPreferenceValue(view, self.prefix + "view-name") : null;
+		var viewId = view ? view.id : null;
+
+		if (viewNavigationLabel && view) {
+			if (viewName && viewName.indexOf('"')!=-1) {
+				viewName = viewName.replace(/"/g, "");
+			}
+
+			if (self.showViewName) {
+				viewNavigationLabel.textContent = viewName;
+				self.setTooltip(viewNavigationLabel, viewIndex + 1 + " of " + self.numberOfViews);
+			}
+			else {
+				viewNavigationLabel.textContent = viewIndex + 1 + " of " + self.numberOfViews;
+				self.setTooltip(viewNavigationLabel, viewName);
+			}
+
+		}
+	}
+
+	self.updateURL = function(view) {
+		view = view == null ? self.getVisibleView() : view;
+		var viewId = view ? view.id : null
+		var viewFragment = view ? "#"+ viewId : null;
+
+		if (viewId && self.viewIds.length>1 && self.enableDeepLinking) {
+
+			if (self.supportsPopState==false) {
+				self.setFragment(viewId);
+			}
+			else {
+				if (viewFragment!=window.location.hash) {
+
+					if (window.location.hash==null) {
+						window.history.replaceState({name:viewId}, null, viewFragment);
+					}
+					else {
+						window.history.pushState({name:viewId}, null, viewFragment);
+					}
+				}
+			}
+		}
+	}
+
+	self.updateURLState = function(view, stateName) {
+		stateName = view && (stateName=="" || stateName==null) ? self.getStateNameByViewId(view.id) : stateName;
+
+		if (self.supportsPopState==false) {
+			self.setFragment(stateName);
+		}
+		else {
+			if (stateName!=window.location.hash) {
+
+				if (window.location.hash==null) {
+					window.history.replaceState({name:view.viewId}, null, stateName);
+				}
+				else {
+					window.history.pushState({name:view.viewId}, null, stateName);
+				}
+			}
+		}
+	}
+
+	self.setFragment = function(value) {
+		window.location.hash = "#" + value;
+	}
+
+	self.setTooltip = function(element, value) {
+		// setting the tooltip in edge causes a page crash on hover
+		if (/Edge/.test(navigator.userAgent)) { return; }
+
+		if ("title" in element) {
+			element.title = value;
+		}
+	}
+
+	self.getStylesheetRules = function(styleSheet) {
+		try {
+			if (styleSheet) return styleSheet.cssRules || styleSheet.rules;
+	
+			return document.styleSheets[0]["cssRules"] || document.styleSheets[0]["rules"];
+		}
+		catch (error) {
+			// ERRORS:
+			// SecurityError: The operation is insecure.
+			// Errors happen when script loads before stylesheet or loading an external css locally
+
+			// InvalidAccessError: A parameter or an operation is not supported by the underlying object
+			// Place script after stylesheet
+
+			console.log(error);
+			if (error.toString().indexOf("The operation is insecure")!=-1) {
+				console.log("Load the stylesheet before the script or load the stylesheet inline until it can be loaded on a server")
+			}
+			return [];
+		}
+	}
+
+	/**
+	 * If single page application hide all of the views. 
+	 * @param {Number} selectedIndex if provided shows the view at index provided
+	 **/
+	self.hideViews = function(selectedIndex, animation) {
+		var rules = self.getStylesheetRules();
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			var cssText = rule && rule.cssText;
+
+			if (rule.media!=null && cssText.match("--web-view-name:")) {
+
+				if (queryIndex==selectedIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = selectedIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+				}
+				else {
+					if (animation) {
+						self.fadeOut(rule)
+					}
+					else {
+						self.disableMediaQuery(rule);
+					}
+				}
+				
+				queryIndex++;
+			}
+		}
+
+		self.numberOfViews = queryIndex;
+		self.updateViewLabel();
+		self.updateURL();
+
+		self.dispatchViewChange();
+
+		var view = self.getVisibleView();
+		var viewIndex = view ? self.getViewIndex(view) : -1;
+
+		return viewIndex==selectedIndex ? view : null;
+	}
+
+	/**
+	 * If single page application hide all of the views. 
+	 * @param {HTMLElement} selectedView if provided shows the view passed in
+	 **/
+	 self.hideAllViews = function(selectedView, animation) {
+		var views = self.views;
+		var queryIndex = 0;
+		var numberOfViews = views!=null ? views.length : 0;
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfViews;i++) {
+			var viewData = views[i];
+			var view = viewData && viewData.view;
+			var mediaRule = viewData && viewData.mediaRule;
+			
+			if (view==selectedView) {
+				self.currentQuery.mediaText = mediaRule.conditionText;
+				self.currentQuery.index = queryIndex;
+				self.currentQuery.rule = mediaRule;
+				self.enableMediaQuery(mediaRule);
+			}
+			else {
+				if (animation) {
+					self.fadeOut(mediaRule)
+				}
+				else {
+					self.disableMediaQuery(mediaRule);
+				}
+			}
+			
+			queryIndex++;
+		}
+
+		self.numberOfViews = queryIndex;
+		self.updateViewLabel();
+		self.updateURL();
+		self.dispatchViewChange();
+
+		var visibleView = self.getVisibleView();
+
+		return visibleView==selectedView ? selectedView : null;
+	}
+
+	/**
+	 * Hide view
+	 * @param {Object} view element to hide
+	 **/
+	self.hideView = function(view) {
+		var rule = view ? self.mediaQueryDictionary[view.id] : null;
+
+		if (rule) {
+			self.disableMediaQuery(rule);
+		}
+	}
+
+	/**
+	 * Hide overlay
+	 * @param {Object} overlay element to hide
+	 **/
+	self.hideOverlay = function(overlay) {
+		var rule = overlay ? self.mediaQueryDictionary[overlay.id] : null;
+
+		if (rule) {
+			self.disableMediaQuery(rule);
+
+			//if (self.showByMediaQuery) {
+				overlay.style.display = "none";
+			//}
+		}
+	}
+
+	/**
+	 * Show the view by media query. Does not hide current views
+	 * Sets view options by default
+	 * @param {Object} view element to show
+	 * @param {Boolean} setViewOptions sets view options if null or true
+	 */
+	self.showViewByMediaQuery = function(view, setViewOptions) {
+		var id = view ? view.id : null;
+		var query = id ? self.mediaQueryDictionary[id] : null;
+		var isOverlay = view ? self.isOverlay(view) : false;
+		setViewOptions = setViewOptions==null ? true : setViewOptions;
+
+		if (query) {
+			self.enableMediaQuery(query);
+
+			if (isOverlay && view && setViewOptions) {
+				self.setViewVariables(null, view);
+			}
+			else {
+				if (view && setViewOptions) self.setViewOptions(view);
+				if (view && setViewOptions) self.setViewVariables(view);
+			}
+		}
+	}
+
+	/**
+	 * Show the view. Does not hide current views
+	 */
+	self.showView = function(view, setViewOptions) {
+		var id = view ? view.id : null;
+		var query = id ? self.mediaQueryDictionary[id] : null;
+		var display = null;
+		setViewOptions = setViewOptions==null ? true : setViewOptions;
+
+		if (query) {
+			self.enableMediaQuery(query);
+			if (view==null) view =self.getVisibleView();
+			if (view && setViewOptions) self.setViewOptions(view);
+		}
+		else if (id) {
+			display = window.getComputedStyle(view).getPropertyValue("display");
+			if (display=="" || display=="none") {
+				view.style.display = "block";
+			}
+		}
+
+		if (view) {
+			if (self.currentView!=null) {
+				self.lastView = self.currentView;
+			}
+
+			self.currentView = view;
+		}
+	}
+
+	self.showViewById = function(id, setViewOptions) {
+		var view = id ? self.getViewById(id) : null;
+
+		if (view) {
+			self.showView(view);
+			return;
+		}
+
+		self.log("View not found '" + id + "'");
+	}
+
+	self.getElementView = function(element) {
+		var view = element;
+		var viewFound = false;
+
+		while (viewFound==false || view==null) {
+			if (view && self.viewsDictionary[view.id]) {
+				return view;
+			}
+			view = view.parentNode;
+		}
+	}
+
+	/**
+	 * Show overlay over view
+	 * @param {Event | HTMLElement} event event or html element with styles applied
+	 * @param {String} id id of view or view reference
+	 * @param {Number} x x location
+	 * @param {Number} y y location
+	 */
+	self.showOverlay = function(event, id, x, y) {
+		var overlay = id && typeof id === 'string' ? self.getViewById(id) : id ? id : null;
+		var query = overlay ? self.mediaQueryDictionary[overlay.id] : null;
+		var centerHorizontally = false;
+		var centerVertically = false;
+		var anchorLeft = false;
+		var anchorTop = false;
+		var anchorRight = false;
+		var anchorBottom = false;
+		var display = null;
+		var reparent = true;
+		var view = null;
+		
+		if (overlay==null || overlay==false) {
+			self.log("Overlay not found, '"+ id + "'");
+			return;
+		}
+
+		// get enter animation - event target must have css variables declared
+		if (event) {
+			var button = event.currentTarget || event; // can be event or htmlelement
+			var buttonComputedStyles = getComputedStyle(button);
+			var actionTargetValue = buttonComputedStyles.getPropertyValue(self.prefix+"action-target").trim();
+			var animation = buttonComputedStyles.getPropertyValue(self.prefix+"animation").trim();
+			var isAnimated = animation!="";
+			var targetType = buttonComputedStyles.getPropertyValue(self.prefix+"action-type").trim();
+			var actionTarget = self.application ? null : self.getElement(actionTargetValue);
+			var actionTargetStyles = actionTarget ? actionTarget.style : null;
+
+			if (actionTargetStyles) {
+				actionTargetStyles.setProperty("animation", animation);
+			}
+
+			if ("stopImmediatePropagation" in event) {
+				event.stopImmediatePropagation();
+			}
+		}
+		
+		if (self.application==false || targetType=="page") {
+			document.location.href = "./" + actionTargetValue;
+			return;
+		}
+
+		// remove any current overlays
+		if (self.currentOverlay) {
+
+			// act as switch if same button
+			if (self.currentOverlay==actionTarget || self.currentOverlay==null) {
+				if (self.lastTrigger==button) {
+					self.removeOverlay(isAnimated);
+					return;
+				}
+			}
+			else {
+				self.removeOverlay(isAnimated);
+			}
+		}
+
+		if (reparent) {
+			view = self.getElementView(button);
+			if (view) {
+				view.appendChild(overlay);
+			}
+		}
+
+		if (query) {
+			//self.setElementAnimation(overlay, null);
+			//overlay.style.animation = animation;
+			self.enableMediaQuery(query);
+			
+			var display = overlay && overlay.style.display;
+			
+			if (overlay && display=="" || display=="none") {
+				overlay.style.display = "block";
+				//self.setViewOptions(overlay);
+			}
+
+			// add animation defined in event target style declaration
+			if (animation && self.supportAnimations) {
+				self.fadeIn(overlay, false, animation);
+			}
+		}
+		else if (id) {
+
+			display = window.getComputedStyle(overlay).getPropertyValue("display");
+
+			if (display=="" || display=="none") {
+				overlay.style.display = "block";
+			}
+
+			// add animation defined in event target style declaration
+			if (animation && self.supportAnimations) {
+				self.fadeIn(overlay, false, animation);
+			}
+		}
+
+		// do not set x or y position if centering
+		var horizontal = self.prefix + "center-horizontally";
+		var vertical = self.prefix + "center-vertically";
+		var style = overlay.style;
+		var transform = [];
+
+		centerHorizontally = self.getIsStyleDefined(id, horizontal) ? self.getViewPreferenceBoolean(overlay, horizontal) : false;
+		centerVertically = self.getIsStyleDefined(id, vertical) ? self.getViewPreferenceBoolean(overlay, vertical) : false;
+		anchorLeft = self.getIsStyleDefined(id, "left");
+		anchorRight = self.getIsStyleDefined(id, "right");
+		anchorTop = self.getIsStyleDefined(id, "top");
+		anchorBottom = self.getIsStyleDefined(id, "bottom");
+
+		
+		if (self.viewsDictionary[overlay.id] && self.viewsDictionary[overlay.id].styleDeclaration) {
+			style = self.viewsDictionary[overlay.id].styleDeclaration.style;
+		}
+		
+		if (centerHorizontally) {
+			style.left = "50%";
+			style.transformOrigin = "0 0";
+			transform.push("translateX(-50%)");
+		}
+		else if (anchorRight && anchorLeft) {
+			style.left = x + "px";
+		}
+		else if (anchorRight) {
+			//style.right = x + "px";
+		}
+		else {
+			style.left = x + "px";
+		}
+		
+		if (centerVertically) {
+			style.top = "50%";
+			transform.push("translateY(-50%)");
+			style.transformOrigin = "0 0";
+		}
+		else if (anchorTop && anchorBottom) {
+			style.top = y + "px";
+		}
+		else if (anchorBottom) {
+			//style.bottom = y + "px";
+		}
+		else {
+			style.top = y + "px";
+		}
+
+		if (transform.length) {
+			style.transform = transform.join(" ");
+		}
+
+		self.currentOverlay = overlay;
+		self.lastTrigger = button;
+	}
+
+	self.goBack = function() {
+		if (self.currentOverlay) {
+			self.removeOverlay();
+		}
+		else if (self.lastView) {
+			self.goToView(self.lastView.id);
+		}
+	}
+
+	self.removeOverlay = function(animate) {
+		var overlay = self.currentOverlay;
+		animate = animate===false ? false : true;
+
+		if (overlay) {
+			var style = overlay.style;
+			
+			if (style.animation && self.supportAnimations && animate) {
+				self.reverseAnimation(overlay, true);
+
+				var duration = self.getAnimationDuration(style.animation, true);
+		
+				setTimeout(function() {
+					self.setElementAnimation(overlay, null);
+					self.hideOverlay(overlay);
+					self.currentOverlay = null;
+				}, duration);
+			}
+			else {
+				self.setElementAnimation(overlay, null);
+				self.hideOverlay(overlay);
+				self.currentOverlay = null;
+			}
+		}
+	}
+
+	/**
+	 * Reverse the animation and hide after
+	 * @param {Object} target element with animation
+	 * @param {Boolean} hide hide after animation ends
+	 */
+	self.reverseAnimation = function(target, hide) {
+		var lastAnimation = null;
+		var style = target.style;
+
+		style.animationPlayState = "paused";
+		lastAnimation = style.animation;
+		style.animation = null;
+		style.animationPlayState = "paused";
+
+		if (hide) {
+			//target.addEventListener("animationend", self.animationEndHideHandler);
+	
+			var duration = self.getAnimationDuration(lastAnimation, true);
+			var isOverlay = self.isOverlay(target);
+	
+			setTimeout(function() {
+				self.setElementAnimation(target, null);
+
+				if (isOverlay) {
+					self.hideOverlay(target);
+				}
+				else {
+					self.hideView(target);
+				}
+			}, duration);
+		}
+
+		setTimeout(function() {
+			style.animation = lastAnimation;
+			style.animationPlayState = "paused";
+			style.animationDirection = "reverse";
+			style.animationPlayState = "running";
+		}, 30);
+	}
+
+	self.animationEndHandler = function(event) {
+		var target = event.currentTarget;
+		self.dispatchEvent(new Event(event.type));
+	}
+
+	self.isOverlay = function(view) {
+		var result = view ? self.getViewPreferenceBoolean(view, self.prefix + "is-overlay") : false;
+
+		return result;
+	}
+
+	self.animationEndHideHandler = function(event) {
+		var target = event.currentTarget;
+		self.setViewVariables(null, target);
+		self.hideView(target);
+		target.removeEventListener("animationend", self.animationEndHideHandler);
+	}
+
+	self.animationEndShowHandler = function(event) {
+		var target = event.currentTarget;
+		target.removeEventListener("animationend", self.animationEndShowHandler);
+	}
+
+	self.setViewOptions = function(view) {
+
+		if (view) {
+			self.minimumScale = self.getViewPreferenceValue(view, self.prefix + "minimum-scale");
+			self.maximumScale = self.getViewPreferenceValue(view, self.prefix + "maximum-scale");
+			self.scaleViewsToFit = self.getViewPreferenceBoolean(view, self.prefix + "scale-to-fit");
+			self.scaleToFitType = self.getViewPreferenceValue(view, self.prefix + "scale-to-fit-type");
+			self.scaleToFitOnDoubleClick = self.getViewPreferenceBoolean(view, self.prefix + "scale-on-double-click");
+			self.actualSizeOnDoubleClick = self.getViewPreferenceBoolean(view, self.prefix + "actual-size-on-double-click");
+			self.scaleViewsOnResize = self.getViewPreferenceBoolean(view, self.prefix + "scale-on-resize");
+			self.enableScaleUp = self.getViewPreferenceBoolean(view, self.prefix + "enable-scale-up");
+			self.centerHorizontally = self.getViewPreferenceBoolean(view, self.prefix + "center-horizontally");
+			self.centerVertically = self.getViewPreferenceBoolean(view, self.prefix + "center-vertically");
+			self.navigationOnKeypress = self.getViewPreferenceBoolean(view, self.prefix + "navigate-on-keypress");
+			self.showViewName = self.getViewPreferenceBoolean(view, self.prefix + "show-view-name");
+			self.refreshPageForChanges = self.getViewPreferenceBoolean(view, self.prefix + "refresh-for-changes");
+			self.refreshPageForChangesInterval = self.getViewPreferenceValue(view, self.prefix + "refresh-interval");
+			self.showNavigationControls = self.getViewPreferenceBoolean(view, self.prefix + "show-navigation-controls");
+			self.scaleViewSlider = self.getViewPreferenceBoolean(view, self.prefix + "show-scale-controls");
+			self.enableDeepLinking = self.getViewPreferenceBoolean(view, self.prefix + "enable-deep-linking");
+			self.singlePageApplication = self.getViewPreferenceBoolean(view, self.prefix + "application");
+			self.showByMediaQuery = self.getViewPreferenceBoolean(view, self.prefix + "show-by-media-query");
+			self.showUpdateNotification = document.cookie!="" ? document.cookie.indexOf(self.pageRefreshedName)!=-1 : false;
+			self.imageComparisonDuration = self.getViewPreferenceValue(view, self.prefix + "image-comparison-duration");
+			self.supportAnimations = self.getViewPreferenceBoolean(view, self.prefix + "enable-animations", true);
+
+			if (self.scaleViewsToFit) {
+				var newScaleValue = self.scaleViewToFit(view);
+				
+				if (newScaleValue<0) {
+					setTimeout(self.scaleViewToFit, 500, view);
+				}
+			}
+			else {
+				self.viewScale = self.getViewScaleValue(view);
+				self.viewToFitWidthScale = self.getViewFitToViewportWidthScale(view, self.enableScaleUp)
+				self.viewToFitHeightScale = self.getViewFitToViewportScale(view, self.enableScaleUp);
+				self.updateSliderValue(self.viewScale);
+			}
+
+			if (self.imageComparisonDuration!=null) {
+				// todo
+			}
+
+			if (self.refreshPageForChangesInterval!=null) {
+				self.refreshDuration = Number(self.refreshPageForChangesInterval);
+			}
+		}
+	}
+
+	self.previousView = function(event) {
+		var rules = self.getStylesheetRules();
+		var view = self.getVisibleView()
+		var index = view ? self.getViewIndex(view) : -1;
+		var prevQueryIndex = index!=-1 ? index-1 : self.currentQuery.index-1;
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+
+		if (event) {
+			event.stopImmediatePropagation();
+		}
+
+		if (prevQueryIndex<0) {
+			return;
+		}
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			
+			if (rule.media!=null) {
+
+				if (queryIndex==prevQueryIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = prevQueryIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+					self.updateViewLabel();
+					self.updateURL();
+					self.dispatchViewChange();
+				}
+				else {
+					self.disableMediaQuery(rule);
+				}
+
+				queryIndex++;
+			}
+		}
+	}
+
+	self.nextView = function(event) {
+		var rules = self.getStylesheetRules();
+		var view = self.getVisibleView();
+		var index = view ? self.getViewIndex(view) : -1;
+		var nextQueryIndex = index!=-1 ? index+1 : self.currentQuery.index+1;
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+		var numberOfMediaQueries = self.getNumberOfMediaRules();
+
+		if (event) {
+			event.stopImmediatePropagation();
+		}
+
+		if (nextQueryIndex>=numberOfMediaQueries) {
+			return;
+		}
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			
+			if (rule.media!=null) {
+
+				if (queryIndex==nextQueryIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = nextQueryIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+					self.updateViewLabel();
+					self.updateURL();
+					self.dispatchViewChange();
+				}
+				else {
+					self.disableMediaQuery(rule);
+				}
+
+				queryIndex++;
+			}
+		}
+	}
+
+	/**
+	 * Enables a view via media query
+	 */
+	self.enableMediaQuery = function(rule) {
+
+		try {
+			rule.media.mediaText = self.inclusionQuery;
+		}
+		catch(error) {
+			//self.log(error);
+			rule.conditionText = self.inclusionQuery;
+		}
+	}
+
+	self.disableMediaQuery = function(rule) {
+
+		try {
+			rule.media.mediaText = self.exclusionQuery;
+		}
+		catch(error) {
+			rule.conditionText = self.exclusionQuery;
+		}
+	}
+
+	self.dispatchViewChange = function() {
+		try {
+			var event = new Event(self.NAVIGATION_CHANGE);
+			window.dispatchEvent(event);
+		}
+		catch (error) {
+			// In IE 11: Object doesn't support this action
+		}
+	}
+
+	self.getNumberOfMediaRules = function() {
+		var rules = self.getStylesheetRules();
+		var numberOfRules = rules ? rules.length : 0;
+		var numberOfQueries = 0;
+
+		for (var i=0;i<numberOfRules;i++) {
+			if (rules[i].media!=null) { numberOfQueries++; }
+		}
+		
+		return numberOfQueries;
+	}
+
+	/////////////////////////////////////////
+	// VIEW SCALE 
+	/////////////////////////////////////////
+
+	self.sliderChangeHandler = function(event) {
+		var value = self.getShortNumber(event.currentTarget.value/100);
+		var view = self.getVisibleView();
+		self.setViewScaleValue(view, false, value, true);
+	}
+
+	self.updateSliderValue = function(scale) {
+		var slider = document.getElementById(self.viewScaleSliderId);
+		var tooltip = parseInt(scale * 100 + "") + "%";
+		var inputType;
+		var inputValue;
+		
+		if (slider) {
+			inputValue = self.getShortNumber(scale * 100);
+			if (inputValue!=slider["value"]) {
+				slider["value"] = inputValue;
+			}
+			inputType = slider.getAttributeNS(null, "type");
+
+			if (inputType!="range") {
+				// input range is not supported
+				slider.style.display = "none";
+			}
+
+			self.setTooltip(slider, tooltip);
+		}
+	}
+
+	self.viewChangeHandler = function(event) {
+		var view = self.getVisibleView();
+		var matrix = view ? getComputedStyle(view).transform : null;
+		
+		if (matrix) {
+			self.viewScale = self.getViewScaleValue(view);
+			
+			var scaleNeededToFit = self.getViewFitToViewportScale(view);
+			var isViewLargerThanViewport = scaleNeededToFit<1;
+			
+			// scale large view to fit if scale to fit is enabled
+			if (self.scaleViewsToFit) {
+				self.scaleViewToFit(view);
+			}
+			else {
+				self.updateSliderValue(self.viewScale);
+			}
+		}
+	}
+
+	self.getViewScaleValue = function(view) {
+		var matrix = getComputedStyle(view).transform;
+
+		if (matrix) {
+			var matrixArray = matrix.replace("matrix(", "").split(",");
+			var scaleX = parseFloat(matrixArray[0]);
+			var scaleY = parseFloat(matrixArray[3]);
+			var scale = Math.min(scaleX, scaleY);
+		}
+
+		return scale;
+	}
+
+	/**
+	 * Scales view to scale. 
+	 * @param {Object} view view to scale. views are in views array
+	 * @param {Boolean} scaleToFit set to true to scale to fit. set false to use desired scale value
+	 * @param {Number} desiredScale scale to define. not used if scale to fit is false
+	 * @param {Boolean} isSliderChange indicates if slider is callee
+	 */
+	self.setViewScaleValue = function(view, scaleToFit, desiredScale, isSliderChange) {
+		var enableScaleUp = self.enableScaleUp;
+		var scaleToFitType = self.scaleToFitType;
+		var minimumScale = self.minimumScale;
+		var maximumScale = self.maximumScale;
+		var hasMinimumScale = !isNaN(minimumScale) && minimumScale!="";
+		var hasMaximumScale = !isNaN(maximumScale) && maximumScale!="";
+		var scaleNeededToFit = self.getViewFitToViewportScale(view, enableScaleUp);
+		var scaleNeededToFitWidth = self.getViewFitToViewportWidthScale(view, enableScaleUp);
+		var scaleNeededToFitHeight = self.getViewFitToViewportHeightScale(view, enableScaleUp);
+		var scaleToFitFull = self.getViewFitToViewportScale(view, true);
+		var scaleToFitFullWidth = self.getViewFitToViewportWidthScale(view, true);
+		var scaleToFitFullHeight = self.getViewFitToViewportHeightScale(view, true);
+		var scaleToWidth = scaleToFitType=="width";
+		var scaleToHeight = scaleToFitType=="height";
+		var shrunkToFit = false;
+		var topPosition = null;
+		var leftPosition = null;
+		var translateY = null;
+		var translateX = null;
+		var transformValue = "";
+		var canCenterVertically = true;
+		var canCenterHorizontally = true;
+		var style = view.style;
+
+		if (view && self.viewsDictionary[view.id] && self.viewsDictionary[view.id].styleDeclaration) {
+			style = self.viewsDictionary[view.id].styleDeclaration.style;
+		}
+
+		if (scaleToFit && isSliderChange!=true) {
+			if (scaleToFitType=="fit" || scaleToFitType=="") {
+				desiredScale = scaleNeededToFit;
+			}
+			else if (scaleToFitType=="width") {
+				desiredScale = scaleNeededToFitWidth;
+			}
+			else if (scaleToFitType=="height") {
+				desiredScale = scaleNeededToFitHeight;
+			}
+		}
+		else {
+			if (isNaN(desiredScale)) {
+				desiredScale = 1;
+			}
+		}
+
+		self.updateSliderValue(desiredScale);
+		
+		// scale to fit width
+		if (scaleToWidth && scaleToHeight==false) {
+			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			canCenterHorizontally = scaleNeededToFitWidth>=1 && enableScaleUp==false;
+
+			if (isSliderChange) {
+				canCenterHorizontally = desiredScale<scaleToFitFullWidth;
+			}
+			else if (scaleToFit) {
+				desiredScale = scaleNeededToFitWidth;
+			}
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+
+			if (hasMaximumScale) {
+				desiredScale = Math.min(desiredScale, Number(maximumScale));
+			}
+
+			desiredScale = self.getShortNumber(desiredScale);
+
+			canCenterHorizontally = self.canCenterHorizontally(view, "width", enableScaleUp, desiredScale, minimumScale, maximumScale);
+			canCenterVertically = self.canCenterVertically(view, "width", enableScaleUp, desiredScale, minimumScale, maximumScale);
+
+			if (desiredScale>1 && (enableScaleUp || isSliderChange)) {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+			else if (desiredScale>=1 && enableScaleUp==false) {
+				transformValue = "scale(" + 1 + ")";
+			}
+			else {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			return desiredScale;
+		}
+
+		// scale to fit height
+		if (scaleToHeight && scaleToWidth==false) {
+			//canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			//canCenterHorizontally = scaleNeededToFitHeight<=scaleNeededToFitWidth && enableScaleUp==false;
+			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			canCenterHorizontally = scaleNeededToFitWidth>=1 && enableScaleUp==false;
+			
+			if (isSliderChange) {
+				canCenterHorizontally = desiredScale<scaleToFitFullHeight;
+			}
+			else if (scaleToFit) {
+				desiredScale = scaleNeededToFitHeight;
+			}
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+
+			if (hasMaximumScale) {
+				desiredScale = Math.min(desiredScale, Number(maximumScale));
+				//canCenterVertically = desiredScale>=scaleNeededToFitHeight && enableScaleUp==false;
+			}
+
+			desiredScale = self.getShortNumber(desiredScale);
+
+			canCenterHorizontally = self.canCenterHorizontally(view, "height", enableScaleUp, desiredScale, minimumScale, maximumScale);
+			canCenterVertically = self.canCenterVertically(view, "height", enableScaleUp, desiredScale, minimumScale, maximumScale);
+
+			if (desiredScale>1 && (enableScaleUp || isSliderChange)) {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+			else if (desiredScale>=1 && enableScaleUp==false) {
+				transformValue = "scale(" + 1 + ")";
+			}
+			else {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+			}
+
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			return scaleNeededToFitHeight;
+		}
+
+		if (scaleToFitType=="fit") {
+			//canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			//canCenterHorizontally = scaleNeededToFitWidth>=scaleNeededToFitHeight;
+			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFit;
+			canCenterHorizontally = scaleNeededToFitWidth>=scaleNeededToFit;
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+
+			desiredScale = self.getShortNumber(desiredScale);
+
+			if (isSliderChange || scaleToFit==false) {
+				canCenterVertically = scaleToFitFullHeight>=desiredScale;
+				canCenterHorizontally = desiredScale<scaleToFitFullWidth;
+			}
+			else if (scaleToFit) {
+				desiredScale = scaleNeededToFit;
+			}
+
+			transformValue = "scale(" + desiredScale + ")";
+
+			//canCenterHorizontally = self.canCenterHorizontally(view, "fit", false, desiredScale);
+			//canCenterVertically = self.canCenterVertically(view, "fit", false, desiredScale);
+			
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			self.updateSliderValue(desiredScale);
+			
+			return desiredScale;
+		}
+
+		if (scaleToFitType=="default" || scaleToFitType=="") {
+			desiredScale = 1;
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+			if (hasMaximumScale) {
+				desiredScale = Math.min(desiredScale, Number(maximumScale));
+			}
+
+			canCenterHorizontally = self.canCenterHorizontally(view, "none", false, desiredScale, minimumScale, maximumScale);
+			canCenterVertically = self.canCenterVertically(view, "none", false, desiredScale, minimumScale, maximumScale);
+
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+				else {
+					transformValue += " translateX(" + 0 + ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			self.updateSliderValue(desiredScale);
+			
+			return desiredScale;
+		}
+	}
+
+	/**
+	 * Returns true if view can be centered horizontally
+	 * @param {HTMLElement} view view
+	 * @param {String} type type of scaling - width, height, all, none
+	 * @param {Boolean} scaleUp if scale up enabled 
+	 * @param {Number} scale target scale value 
+	 */
+	self.canCenterHorizontally = function(view, type, scaleUp, scale, minimumScale, maximumScale) {
+		var scaleNeededToFit = self.getViewFitToViewportScale(view, scaleUp);
+		var scaleNeededToFitHeight = self.getViewFitToViewportHeightScale(view, scaleUp);
+		var scaleNeededToFitWidth = self.getViewFitToViewportWidthScale(view, scaleUp);
+		var canCenter = false;
+		var minScale;
+
+		type = type==null ? "none" : type;
+		scale = scale==null ? scale : scaleNeededToFitWidth;
+		scaleUp = scaleUp == null ? false : scaleUp;
+
+		if (type=="width") {
+	
+			if (scaleUp && maximumScale==null) {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitWidth>=1) {
+				canCenter = true;
+			}
+		}
+		else if (type=="height") {
+			minScale = Math.min(1, scaleNeededToFitHeight);
+			if (minimumScale!="" && maximumScale!="") {
+				minScale = Math.max(minimumScale, Math.min(maximumScale, scaleNeededToFitHeight));
+			}
+			else {
+				if (minimumScale!="") {
+					minScale = Math.max(minimumScale, scaleNeededToFitHeight);
+				}
+				if (maximumScale!="") {
+					minScale = Math.max(minimumScale, Math.min(maximumScale, scaleNeededToFitHeight));
+				}
+			}
+	
+			if (scaleUp && maximumScale=="") {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitWidth>=minScale) {
+				canCenter = true;
+			}
+		}
+		else if (type=="fit") {
+			canCenter = scaleNeededToFitWidth>=scaleNeededToFit;
+		}
+		else {
+			if (scaleUp) {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitWidth>=1) {
+				canCenter = true;
+			}
+		}
+
+		self.horizontalScrollbarsNeeded = canCenter;
+		
+		return canCenter;
+	}
+
+	/**
+	 * Returns true if view can be centered horizontally
+	 * @param {HTMLElement} view view to scale
+	 * @param {String} type type of scaling
+	 * @param {Boolean} scaleUp if scale up enabled 
+	 * @param {Number} scale target scale value 
+	 */
+	self.canCenterVertically = function(view, type, scaleUp, scale, minimumScale, maximumScale) {
+		var scaleNeededToFit = self.getViewFitToViewportScale(view, scaleUp);
+		var scaleNeededToFitWidth = self.getViewFitToViewportWidthScale(view, scaleUp);
+		var scaleNeededToFitHeight = self.getViewFitToViewportHeightScale(view, scaleUp);
+		var canCenter = false;
+		var minScale;
+
+		type = type==null ? "none" : type;
+		scale = scale==null ? 1 : scale;
+		scaleUp = scaleUp == null ? false : scaleUp;
+	
+		if (type=="width") {
+			canCenter = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+		}
+		else if (type=="height") {
+			minScale = Math.max(minimumScale, Math.min(maximumScale, scaleNeededToFit));
+			canCenter = scaleNeededToFitHeight>=minScale;
+		}
+		else if (type=="fit") {
+			canCenter = scaleNeededToFitHeight>=scaleNeededToFit;
+		}
+		else {
+			if (scaleUp) {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitHeight>=1) {
+				canCenter = true;
+			}
+		}
+
+		self.verticalScrollbarsNeeded = canCenter;
+		
+		return canCenter;
+	}
+
+	self.getViewFitToViewportScale = function(view, scaleUp) {
+		var enableScaleUp = scaleUp;
+		var availableWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		var availableHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		var elementWidth = parseFloat(getComputedStyle(view, "style").width);
+		var elementHeight = parseFloat(getComputedStyle(view, "style").height);
+		var newScale = 1;
+
+		// if element is not added to the document computed values are NaN
+		if (isNaN(elementWidth) || isNaN(elementHeight)) {
+			return newScale;
+		}
+
+		availableWidth -= self.horizontalPadding;
+		availableHeight -= self.verticalPadding;
+
+		if (enableScaleUp) {
+			newScale = Math.min(availableHeight/elementHeight, availableWidth/elementWidth);
+		}
+		else if (elementWidth > availableWidth || elementHeight > availableHeight) {
+			newScale = Math.min(availableHeight/elementHeight, availableWidth/elementWidth);
+		}
+		
+		return newScale;
+	}
+
+	self.getViewFitToViewportWidthScale = function(view, scaleUp) {
+		// need to get browser viewport width when element
+		var isParentWindow = view && view.parentNode && view.parentNode===document.body;
+		var enableScaleUp = scaleUp;
+		var availableWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		var elementWidth = parseFloat(getComputedStyle(view, "style").width);
+		var newScale = 1;
+
+		// if element is not added to the document computed values are NaN
+		if (isNaN(elementWidth)) {
+			return newScale;
+		}
+
+		availableWidth -= self.horizontalPadding;
+
+		if (enableScaleUp) {
+			newScale = availableWidth/elementWidth;
+		}
+		else if (elementWidth > availableWidth) {
+			newScale = availableWidth/elementWidth;
+		}
+		
+		return newScale;
+	}
+
+	self.getViewFitToViewportHeightScale = function(view, scaleUp) {
+		var enableScaleUp = scaleUp;
+		var availableHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		var elementHeight = parseFloat(getComputedStyle(view, "style").height);
+		var newScale = 1;
+
+		// if element is not added to the document computed values are NaN
+		if (isNaN(elementHeight)) {
+			return newScale;
+		}
+
+		availableHeight -= self.verticalPadding;
+
+		if (enableScaleUp) {
+			newScale = availableHeight/elementHeight;
+		}
+		else if (elementHeight > availableHeight) {
+			newScale = availableHeight/elementHeight;
+		}
+		
+		return newScale;
+	}
+
+	self.keypressHandler = function(event) {
+		var rightKey = 39;
+		var leftKey = 37;
+		
+		// listen for both events 
+		if (event.type=="keypress") {
+			window.removeEventListener("keyup", self.keypressHandler);
+		}
+		else {
+			window.removeEventListener("keypress", self.keypressHandler);
+		}
+		
+		if (self.showNavigationControls) {
+			if (self.navigationOnKeypress) {
+				if (event.keyCode==rightKey) {
+					self.nextView();
+				}
+				if (event.keyCode==leftKey) {
+					self.previousView();
+				}
+			}
+		}
+		else if (self.navigationOnKeypress) {
+			if (event.keyCode==rightKey) {
+				self.nextView();
+			}
+			if (event.keyCode==leftKey) {
+				self.previousView();
+			}
+		}
+	}
+
+	///////////////////////////////////
+	// GENERAL FUNCTIONS
+	///////////////////////////////////
+
+	self.getViewById = function(id) {
+		id = id ? id.replace("#", "") : "";
+		var view = self.viewIds.indexOf(id)!=-1 && self.getElement(id);
+		return view;
+	}
+
+	self.getViewIds = function() {
+		var viewIds = self.getViewPreferenceValue(document.body, self.prefix + "view-ids");
+		var viewId = null;
+
+		viewIds = viewIds!=null && viewIds!="" ? viewIds.split(",") : [];
+
+		if (viewIds.length==0) {
+			viewId = self.getViewPreferenceValue(document.body, self.prefix + "view-id");
+			viewIds = viewId ? [viewId] : [];
+		}
+
+		return viewIds;
+	}
+
+	self.getInitialViewId = function() {
+		var viewId = self.getViewPreferenceValue(document.body, self.prefix + "view-id");
+		return viewId;
+	}
+
+	self.getApplicationStylesheet = function() {
+		var stylesheetId = self.getViewPreferenceValue(document.body, self.prefix + "stylesheet-id");
+		self.applicationStylesheet = document.getElementById("applicationStylesheet");
+		return self.applicationStylesheet.sheet;
+	}
+
+	self.getVisibleView = function() {
+		var viewIds = self.getViewIds();
+		
+		for (var i=0;i<viewIds.length;i++) {
+			var viewId = viewIds[i].replace(/[\#?\.?](.*)/, "$" + "1");
+			var view = self.getElement(viewId);
+			var postName = "_Class";
+
+			if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
+				view = self.getElement(viewId.replace(postName, ""));
+			}
+			
+			if (view) {
+				var display = getComputedStyle(view).display;
+		
+				if (display=="block" || display=="flex") {
+					return view;
+				}
+			}
+		}
+
+		return null;
+	}
+
+	self.getVisibleViews = function() {
+		var viewIds = self.getViewIds();
+		var views = [];
+		
+		for (var i=0;i<viewIds.length;i++) {
+			var viewId = viewIds[i].replace(/[\#?\.?](.*)/, "$" + "1");
+			var view = self.getElement(viewId);
+			var postName = "_Class";
+
+			if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
+				view = self.getElement(viewId.replace(postName, ""));
+			}
+			
+			if (view) {
+				var display = getComputedStyle(view).display;
+				
+				if (display=="none") {
+					continue;
+				}
+
+				if (display=="block" || display=="flex") {
+					views.push(view);
+				}
+			}
+		}
+
+		return views;
+	}
+
+	self.getStateNameByViewId = function(id) {
+		var state = self.viewsDictionary[id];
+		return state && state.stateName;
+	}
+
+	self.getMatchingViews = function(ids) {
+		var views = self.addedViews.slice(0);
+		var matchingViews = [];
+
+		if (self.showByMediaQuery) {
+			for (let index = 0; index < views.length; index++) {
+				var viewId = views[index];
+				var state = self.viewsDictionary[viewId];
+				var rule = state && state.rule; 
+				var matchResults = window.matchMedia(rule.conditionText);
+				var view = self.views[viewId];
+				
+				if (matchResults.matches) {
+					if (ids==true) {
+						matchingViews.push(viewId);
+					}
+					else {
+						matchingViews.push(view);
+					}
+				}
+			}
+		}
+
+		return matchingViews;
+	}
+
+	self.ruleMatchesQuery = function(rule) {
+		var result = window.matchMedia(rule.conditionText);
+		return result.matches;
+	}
+
+	self.getViewsByStateName = function(stateName, matchQuery) {
+		var views = self.addedViews.slice(0);
+		var matchingViews = [];
+
+		if (self.showByMediaQuery) {
+
+			// find state name
+			for (let index = 0; index < views.length; index++) {
+				var viewId = views[index];
+				var state = self.viewsDictionary[viewId];
+				var rule = state.rule;
+				var mediaRule = state.mediaRule;
+				var view = self.views[viewId];
+				var viewStateName = self.getStyleRuleValue(mediaRule, self.STATE_NAME, state);
+				var stateFoundAtt = view.getAttribute(self.STATE_NAME)==state;
+				var matchesResults = false;
+				
+				if (viewStateName==stateName) {
+					if (matchQuery) {
+						matchesResults = self.ruleMatchesQuery(rule);
+
+						if (matchesResults) {
+							matchingViews.push(view);
+						}
+					}
+					else {
+						matchingViews.push(view);
+					}
+				}
+			}
+		}
+
+		return matchingViews;
+	}
+
+	self.getInitialView = function() {
+		var viewId = self.getInitialViewId();
+		viewId = viewId.replace(/[\#?\.?](.*)/, "$" + "1");
+		var view = self.getElement(viewId);
+		var postName = "_Class";
+
+		if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
+			view = self.getElement(viewId.replace(postName, ""));
+		}
+
+		return view;
+	}
+
+	self.getViewIndex = function(view) {
+		var viewIds = self.getViewIds();
+		var id = view ? view.id : null;
+		var index = id && viewIds ? viewIds.indexOf(id) : -1;
+
+		return index;
+	}
+
+	self.syncronizeViewToURL = function() {
+		var fragment = self.getHashFragment();
+
+		if (self.showByMediaQuery) {
+			var stateName = fragment;
+			
+			if (stateName==null || stateName=="") {
+				var initialView = self.getInitialView();
+				stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+			}
+			
+			self.showMediaQueryViewsByState(stateName);
+			return;
+		}
+
+		var view = self.getViewById(fragment);
+		var index = view ? self.getViewIndex(view) : 0;
+		if (index==-1) index = 0;
+		var currentView = self.hideViews(index);
+
+		if (self.supportsPopState && currentView) {
+
+			if (fragment==null) {
+				window.history.replaceState({name:currentView.id}, null, "#"+ currentView.id);
+			}
+			else {
+				window.history.pushState({name:currentView.id}, null, "#"+ currentView.id);
+			}
+		}
+		
+		self.setViewVariables(view);
+		return view;
+	}
+
+	/**
+	 * Set the currentView or currentOverlay properties and set the lastView or lastOverlay properties
+	 */
+	self.setViewVariables = function(view, overlay, parentView) {
+		if (view) {
+			if (self.currentView) {
+				self.lastView = self.currentView;
+			}
+			self.currentView = view;
+		}
+
+		if (overlay) {
+			if (self.currentOverlay) {
+				self.lastOverlay = self.currentOverlay;
+			}
+			self.currentOverlay = overlay;
+		}
+	}
+
+	self.getViewPreferenceBoolean = function(view, property, altValue) {
+		var computedStyle = window.getComputedStyle(view);
+		var value = computedStyle.getPropertyValue(property);
+		var type = typeof value;
+		
+		if (value=="true" || (type=="string" && value.indexOf("true")!=-1)) {
+			return true;
+		}
+		else if (value=="" && arguments.length==3) {
+			return altValue;
+		}
+
+		return false;
+	}
+
+	self.getViewPreferenceValue = function(view, property, defaultValue) {
+		var value = window.getComputedStyle(view).getPropertyValue(property);
+
+		if (value===undefined) {
+			return defaultValue;
+		}
+		
+		value = value.replace(/^[\s\"]*/, "");
+		value = value.replace(/[\s\"]*$/, "");
+		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, function (match, capture) { 
+			return capture;
+		});
+
+		return value;
+	}
+
+	self.getStyleRuleValue = function(cssRule, property) {
+		var value = cssRule ? cssRule.style.getPropertyValue(property) : null;
+
+		if (value===undefined) {
+			return null;
+		}
+		
+		value = value.replace(/^[\s\"]*/, "");
+		value = value.replace(/[\s\"]*$/, "");
+		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, function (match, capture) { 
+			return capture;
+		});
+
+		return value;
+	}
+
+	/**
+	 * Get the first defined value of property. Returns empty string if not defined
+	 * @param {String} id id of element
+	 * @param {String} property 
+	 */
+	self.getCSSPropertyValueForElement = function(id, property) {
+		var styleSheets = document.styleSheets;
+		var numOfStylesheets = styleSheets.length;
+		var values = [];
+		var selectorIDText = "#" + id;
+		var selectorClassText = "." + id + "_Class";
+		var value;
+
+		for(var i=0;i<numOfStylesheets;i++) {
+			var styleSheet = styleSheets[i];
+			var cssRules = self.getStylesheetRules(styleSheet);
+			var numOfCSSRules = cssRules.length;
+			var cssRule;
+			
+			for (var j=0;j<numOfCSSRules;j++) {
+				cssRule = cssRules[j];
+				
+				if (cssRule.media) {
+					var mediaRules = cssRule.cssRules;
+					var numOfMediaRules = mediaRules ? mediaRules.length : 0;
+					
+					for(var k=0;k<numOfMediaRules;k++) {
+						var mediaRule = mediaRules[k];
+						
+						if (mediaRule.selectorText==selectorIDText || mediaRule.selectorText==selectorClassText) {
+							
+							if (mediaRule.style && mediaRule.style.getPropertyValue(property)!="") {
+								value = mediaRule.style.getPropertyValue(property);
+								values.push(value);
+							}
+						}
+					}
+				}
+				else {
+
+					if (cssRule.selectorText==selectorIDText || cssRule.selectorText==selectorClassText) {
+						if (cssRule.style && cssRule.style.getPropertyValue(property)!="") {
+							value = cssRule.style.getPropertyValue(property);
+							values.push(value);
+						}
+					}
+				}
+			}
+		}
+
+		return values.pop();
+	}
+
+	self.getIsStyleDefined = function(id, property) {
+		var value = self.getCSSPropertyValueForElement(id, property);
+		return value!==undefined && value!="";
+	}
+
+	self.collectViews = function() {
+		var viewIds = self.getViewIds();
+
+		for (let index = 0; index < viewIds.length; index++) {
+			const id = viewIds[index];
+			const view = self.getElement(id);
+			self.views[id] = view;
+		}
+		
+		self.viewIds = viewIds;
+	}
+
+	self.collectOverlays = function() {
+		var viewIds = self.getViewIds();
+		var ids = [];
+
+		for (let index = 0; index < viewIds.length; index++) {
+			const id = viewIds[index];
+			const view = self.getViewById(id);
+			const isOverlay = view && self.isOverlay(view);
+			
+			if (isOverlay) {
+				ids.push(id);
+				self.overlays[id] = view;
+			}
+		}
+		
+		self.overlayIds = ids;
+	}
+
+	self.collectMediaQueries = function() {
+		var viewIds = self.getViewIds();
+		var styleSheet = self.getApplicationStylesheet();
+		var cssRules = self.getStylesheetRules(styleSheet);
+		var numOfCSSRules = cssRules ? cssRules.length : 0;
+		var cssRule;
+		var id = viewIds.length ? viewIds[0]: ""; // single view
+		var selectorIDText = "#" + id;
+		var selectorClassText = "." + id + "_Class";
+		var viewsNotFound = viewIds.slice();
+		var viewsFound = [];
+		var selectorText = null;
+		var property = self.prefix + "view-id";
+		var stateName = self.prefix + "state";
+		var stateValue = null;
+		var view = null;
+		
+		for (var j=0;j<numOfCSSRules;j++) {
+			cssRule = cssRules[j];
+			
+			if (cssRule.media) {
+				var mediaRules = cssRule.cssRules;
+				var numOfMediaRules = mediaRules ? mediaRules.length : 0;
+				var mediaViewInfoFound = false;
+				var mediaId = null;
+				
+				for(var k=0;k<numOfMediaRules;k++) {
+					var mediaRule = mediaRules[k];
+
+					selectorText = mediaRule.selectorText;
+					
+					if (selectorText==".mediaViewInfo" && mediaViewInfoFound==false) {
+
+						mediaId = self.getStyleRuleValue(mediaRule, property);
+						stateValue = self.getStyleRuleValue(mediaRule, stateName);
+
+						selectorIDText = "#" + mediaId;
+						selectorClassText = "." + mediaId + "_Class";
+						view = self.getElement(mediaId);
+						
+						// prevent duplicates from load and domcontentloaded events
+						if (self.addedViews.indexOf(mediaId)==-1) {
+							self.addView(view, mediaId, cssRule, mediaRule, stateValue);
+						}
+
+						viewsFound.push(mediaId);
+
+						if (viewsNotFound.indexOf(mediaId)!=-1) {
+							viewsNotFound.splice(viewsNotFound.indexOf(mediaId));
+						}
+
+						mediaViewInfoFound = true;
+					}
+
+					if (selectorIDText==selectorText || selectorClassText==selectorText) {
+						var styleObject = self.viewsDictionary[mediaId];
+						if (styleObject) {
+							styleObject.styleDeclaration = mediaRule;
+						}
+						break;
+					}
+				}
+			}
+			else {
+				selectorText = cssRule.selectorText;
+				
+				if (selectorText==null) continue;
+
+				selectorText = selectorText.replace(/[#|\s|*]?/g, "");
+
+				if (viewIds.indexOf(selectorText)!=-1) {
+					view = self.getElement(selectorText);
+					self.addView(view, selectorText, cssRule, null, stateValue);
+
+					if (viewsNotFound.indexOf(selectorText)!=-1) {
+						viewsNotFound.splice(viewsNotFound.indexOf(selectorText));
+					}
+
+					break;
+				}
+			}
+		}
+
+		if (viewsNotFound.length) {
+			console.log("Could not find the following views:" + viewsNotFound.join(",") + "");
+			console.log("Views found:" + viewsFound.join(",") + "");
+		}
+	}
+
+	/**
+	 * Adds a view
+	 * @param {HTMLElement} view view element
+	 * @param {String} id id of view element
+	 * @param {CSSRule} cssRule of view element
+	 * @param {CSSMediaRule} mediaRule media rule of view element
+	 * @param {String} stateName name of state if applicable
+	 **/
+	self.addView = function(view, viewId, cssRule, mediaRule, stateName) {
+		var viewData = {};
+		viewData.name = viewId;
+		viewData.rule = cssRule;
+		viewData.id = viewId;
+		viewData.mediaRule = mediaRule;
+		viewData.stateName = stateName;
+
+		self.views.push(viewData);
+		self.addedViews.push(viewId);
+		self.viewsDictionary[viewId] = viewData;
+		self.mediaQueryDictionary[viewId] = cssRule;
+	}
+
+	self.hasView = function(name) {
+
+		if (self.addedViews.indexOf(name)!=-1) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * Go to view by id. Views are added in addView()
+	 * @param {String} id id of view in current
+	 * @param {Boolean} maintainPreviousState if true then do not hide other views
+	 * @param {String} parent id of parent view
+	 **/
+	self.goToView = function(id, maintainPreviousState, parent) {
+		var state = self.viewsDictionary[id];
+
+		if (state) {
+			if (maintainPreviousState==false || maintainPreviousState==null) {
+				self.hideViews();
+			}
+			self.enableMediaQuery(state.rule);
+			self.updateViewLabel();
+			self.updateURL();
+		}
+		else {
+			var event = new Event(self.STATE_NOT_FOUND);
+			self.stateName = id;
+			window.dispatchEvent(event);
+		}
+	}
+
+	/**
+	 * Go to the view in the event targets CSS variable
+	 **/
+	self.goToTargetView = function(event) {
+		var button = event.currentTarget;
+		var buttonComputedStyles = getComputedStyle(button);
+		var actionTargetValue = buttonComputedStyles.getPropertyValue(self.prefix+"action-target").trim();
+		var animation = buttonComputedStyles.getPropertyValue(self.prefix+"animation").trim();
+		var targetType = buttonComputedStyles.getPropertyValue(self.prefix+"action-type").trim();
+		var targetView = self.application ? null : self.getElement(actionTargetValue);
+		var targetState = targetView ? self.getStateNameByViewId(targetView.id) : null;
+		var actionTargetStyles = targetView ? targetView.style : null;
+		var state = self.viewsDictionary[actionTargetValue];
+		
+		// navigate to page
+		if (self.application==false || targetType=="page") {
+			document.location.href = "./" + actionTargetValue;
+			return;
+		}
+
+		// if view is found
+		if (targetView) {
+
+			if (self.currentOverlay) {
+				self.removeOverlay(false);
+			}
+
+			if (self.showByMediaQuery) {
+				var stateName = targetState;
+				
+				if (stateName==null || stateName=="") {
+					var initialView = self.getInitialView();
+					stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+				}
+				self.showMediaQueryViewsByState(stateName, event);
+				return;
+			}
+
+			// add animation set in event target style declaration
+			if (animation && self.supportAnimations) {
+				self.crossFade(self.currentView, targetView, false, animation);
+			}
+			else {
+				self.setViewVariables(self.currentView);
+				self.hideViews();
+				self.enableMediaQuery(state.rule);
+				self.scaleViewIfNeeded(targetView);
+				self.centerView(targetView);
+				self.updateViewLabel();
+				self.updateURL();
+			}
+		}
+		else {
+			var stateEvent = new Event(self.STATE_NOT_FOUND);
+			self.stateName = name;
+			window.dispatchEvent(stateEvent);
+		}
+
+		event.stopImmediatePropagation();
+	}
+
+	/**
+	 * Cross fade between views
+	 **/
+	self.crossFade = function(from, to, update, animation) {
+		var targetIndex = to.parentNode
+		var fromIndex = Array.prototype.slice.call(from.parentElement.children).indexOf(from);
+		var toIndex = Array.prototype.slice.call(to.parentElement.children).indexOf(to);
+
+		if (from.parentNode==to.parentNode) {
+			var reverse = self.getReverseAnimation(animation);
+			var duration = self.getAnimationDuration(animation, true);
+
+			// if target view is above (higher index)
+			// then fade in target view 
+			// and after fade in then hide previous view instantly
+			if (fromIndex<toIndex) {
+				self.setElementAnimation(from, null);
+				self.setElementAnimation(to, null);
+				self.showViewByMediaQuery(to);
+				self.fadeIn(to, update, animation);
+
+				setTimeout(function() {
+					self.setElementAnimation(to, null);
+					self.setElementAnimation(from, null);
+					self.hideView(from);
+					self.updateURL();
+					self.setViewVariables(to);
+					self.updateViewLabel();
+				}, duration)
+			}
+			// if target view is on bottom
+			// then show target view instantly 
+			// and fade out current view
+			else if (fromIndex>toIndex) {
+				self.setElementAnimation(to, null);
+				self.setElementAnimation(from, null);
+				self.showViewByMediaQuery(to);
+				self.fadeOut(from, update, reverse);
+
+				setTimeout(function() {
+					self.setElementAnimation(to, null);
+					self.setElementAnimation(from, null);
+					self.hideView(from);
+					self.updateURL();
+					self.setViewVariables(to);
+				}, duration)
+			}
+		}
+	}
+
+	self.fadeIn = function(element, update, animation) {
+		self.showViewByMediaQuery(element);
+
+		if (update) {
+			self.updateURL(element);
+
+			element.addEventListener("animationend", function(event) {
+				element.style.animation = null;
+				self.setViewVariables(element);
+				self.updateViewLabel();
+				element.removeEventListener("animationend", arguments.callee);
+			});
+		}
+
+		self.setElementAnimation(element, null);
+		
+		element.style.animation = animation;
+	}
+
+	self.fadeOutCurrentView = function(animation, update) {
+		if (self.currentView) {
+			self.fadeOut(self.currentView, update, animation);
+		}
+		if (self.currentOverlay) {
+			self.fadeOut(self.currentOverlay, update, animation);
+		}
+	}
+
+	self.fadeOut = function(element, update, animation) {
+		if (update) {
+			element.addEventListener("animationend", function(event) {
+				element.style.animation = null;
+				self.hideView(element);
+				element.removeEventListener("animationend", arguments.callee);
+			});
+		}
+
+		element.style.animationPlayState = "paused";
+		element.style.animation = animation;
+		element.style.animationPlayState = "running";
+	}
+
+	self.getReverseAnimation = function(animation) {
+		if (animation && animation.indexOf("reverse")==-1) {
+			animation += " reverse";
+		}
+
+		return animation;
+	}
+
+	/**
+	 * Get duration in animation string
+	 * @param {String} animation animation value
+	 * @param {Boolean} inMilliseconds length in milliseconds if true
+	 */
+	self.getAnimationDuration = function(animation, inMilliseconds) {
+		var duration = 0;
+		var expression = /.+(\d\.\d)s.+/;
+
+		if (animation && animation.match(expression)) {
+			duration = parseFloat(animation.replace(expression, "$" + "1"));
+			if (duration && inMilliseconds) duration = duration * 1000;
+		}
+
+		return duration;
+	}
+
+	self.setElementAnimation = function(element, animation, priority) {
+		element.style.setProperty("animation", animation, "important");
+	}
+
+	self.getElement = function(id) {
+		id = id ? id.trim() : id;
+		var element = id ? document.getElementById(id) : null;
+
+		return element;
+	}
+
+	self.getElementById = function(id) {
+		id = id ? id.trim() : id;
+		var element = id ? document.getElementById(id) : null;
+
+		return element;
+	}
+
+	self.getElementByClass = function(className) {
+		className = className ? className.trim() : className;
+		var elements = document.getElementsByClassName(className);
+
+		return elements.length ? elements[0] : null;
+	}
+
+	self.resizeHandler = function(event) {
+		
+		if (self.showByMediaQuery) {
+			if (self.enableDeepLinking) {
+				var stateName = self.getHashFragment();
+
+				if (stateName==null || stateName=="") {
+					var initialView = self.getInitialView();
+					stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+				}
+				self.showMediaQueryViewsByState(stateName, event);
+			}
+		}
+		else {
+			var visibleViews = self.getVisibleViews();
+
+			for (let index = 0; index < visibleViews.length; index++) {	
+				var view = visibleViews[index];
+				self.scaleViewIfNeeded(view);
+			}
+		}
+
+		window.dispatchEvent(new Event(self.APPLICATION_RESIZE));
+	}
+
+	self.scaleViewIfNeeded = function(view) {
+
+		if (self.scaleViewsOnResize) {
+			if (view==null) {
+				view = self.getVisibleView();
+			}
+
+			var isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME)=="false" ? false : true;
+
+			if (isViewScaled) {
+				self.scaleViewToFit(view, true);
+			}
+			else {
+				self.scaleViewToActualSize(view);
+			}
+		}
+		else if (view) {
+			self.centerView(view);
+		}
+	}
+
+	self.centerView = function(view) {
+
+		if (self.scaleViewsToFit) {
+			self.scaleViewToFit(view, true);
+		}
+		else {
+			self.scaleViewToActualSize(view);  // for centering support for now
+		}
+	}
+
+	self.preventDoubleClick = function(event) {
+		event.stopImmediatePropagation();
+	}
+
+	self.getHashFragment = function() {
+		var value = window.location.hash ? window.location.hash.replace("#", "") : "";
+		return value;
+	}
+
+	self.showBlockElement = function(view) {
+		view.style.display = "block";
+	}
+
+	self.hideElement = function(view) {
+		view.style.display = "none";
+	}
+
+	self.showStateFunction = null;
+
+	self.showMediaQueryViewsByState = function(state, event) {
+		// browser will hide and show by media query (small, medium, large)
+		// but if multiple views exists at same size user may want specific view
+		// if showStateFunction is defined that is called with state fragment and user can show or hide each media matching view by returning true or false
+		// if showStateFunction is not defined and state is defined and view has a defined state that matches then show that and hide other matching views
+		// if no state is defined show view 
+		// an viewChanging event is dispatched before views are shown or hidden that can be prevented 
+
+		// get all matched queries
+		// if state name is specified then show that view and hide other views
+		// if no state name is defined then show
+		var matchedViews = self.getMatchingViews();
+		var matchMediaQuery = true;
+		var foundViews = self.getViewsByStateName(state, matchMediaQuery);
+		var showViews = [];
+		var hideViews = [];
+
+		// loop views that match media query 
+		for (let index = 0; index < matchedViews.length; index++) {
+			var view = matchedViews[index];
+			
+			// let user determine visible view
+			if (self.showStateFunction!=null) {
+				if (self.showStateFunction(view, state)) {
+					showViews.push(view);
+				}
+				else {
+					hideViews.push(view);
+				}
+			}
+			// state was defined so check if view matches state
+			else if (foundViews.length) {
+
+				if (foundViews.indexOf(view)!=-1) {
+					showViews.push(view);
+				}
+				else {
+					hideViews.push(view);
+				}
+			}
+			// if no state names are defined show view (define unused state name to exclude)
+			else if (state==null || state=="") {
+				showViews.push(view);
+			}
+		}
+
+		if (showViews.length) {
+			var viewChangingEvent = new Event(self.VIEW_CHANGING);
+			viewChangingEvent.showViews = showViews;
+			viewChangingEvent.hideViews = hideViews;
+			window.dispatchEvent(viewChangingEvent);
+
+			if (viewChangingEvent.defaultPrevented==false) {
+				for (var index = 0; index < hideViews.length; index++) {
+					var view = hideViews[index];
+
+					if (self.isOverlay(view)) {
+						self.removeOverlay(view);
+					}
+					else {
+						self.hideElement(view);
+					}
+				}
+
+				for (var index = 0; index < showViews.length; index++) {
+					var view = showViews[index];
+
+					if (index==showViews.length-1) {
+						self.clearDisplay(view);
+						self.setViewOptions(view);
+						self.setViewVariables(view);
+						self.centerView(view);
+						self.updateURLState(view, state);
+					}
+				}
+			}
+
+			var viewChangeEvent = new Event(self.VIEW_CHANGE);
+			viewChangeEvent.showViews = showViews;
+			viewChangeEvent.hideViews = hideViews;
+			window.dispatchEvent(viewChangeEvent);
+		}
+		
+	}
+
+	self.clearDisplay = function(view) {
+		view.style.setProperty("display", null);
+	}
+
+	self.hashChangeHandler = function(event) {
+		var fragment = self.getHashFragment();
+		var view = self.getViewById(fragment);
+
+		if (self.showByMediaQuery) {
+			var stateName = fragment;
+
+			if (stateName==null || stateName=="") {
+				var initialView = self.getInitialView();
+				stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+			}
+			self.showMediaQueryViewsByState(stateName);
+		}
+		else {
+			if (view) {
+				self.hideViews();
+				self.showView(view);
+				self.setViewVariables(view);
+				self.updateViewLabel();
+				
+				window.dispatchEvent(new Event(self.VIEW_CHANGE));
+			}
+			else {
+				window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
+			}
+		}
+	}
+
+	self.popStateHandler = function(event) {
+		var state = event.state;
+		var fragment = state ? state.name : window.location.hash;
+		var view = self.getViewById(fragment);
+
+		if (view) {
+			self.hideViews();
+			self.showView(view);
+			self.updateViewLabel();
+		}
+		else {
+			window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
+		}
+	}
+
+	self.doubleClickHandler = function(event) {
+		var view = self.getVisibleView();
+		var scaleValue = view ? self.getViewScaleValue(view) : 1;
+		var scaleNeededToFit = view ? self.getViewFitToViewportScale(view) : 1;
+		var scaleNeededToFitWidth = view ? self.getViewFitToViewportWidthScale(view) : 1;
+		var scaleNeededToFitHeight = view ? self.getViewFitToViewportHeightScale(view) : 1;
+		var scaleToFitType = self.scaleToFitType;
+
+		// Three scenarios
+		// - scale to fit on double click
+		// - set scale to actual size on double click
+		// - switch between scale to fit and actual page size
+
+		if (scaleToFitType=="width") {
+			scaleNeededToFit = scaleNeededToFitWidth;
+		}
+		else if (scaleToFitType=="height") {
+			scaleNeededToFit = scaleNeededToFitHeight;
+		}
+
+		// if scale and actual size enabled then switch between
+		if (self.scaleToFitOnDoubleClick && self.actualSizeOnDoubleClick) {
+			var isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
+			var isScaled = false;
+			
+			// if scale is not 1 then view needs scaling
+			if (scaleNeededToFit!=1) {
+
+				// if current scale is at 1 it is at actual size
+				// scale it to fit
+				if (scaleValue==1) {
+					self.scaleViewToFit(view);
+					isScaled = true;
+				}
+				else {
+					// scale is not at 1 so switch to actual size
+					self.scaleViewToActualSize(view);
+					isScaled = false;
+				}
+			}
+			else {
+				// view is smaller than viewport 
+				// so scale to fit() is scale actual size
+				// actual size and scaled size are the same
+				// but call scale to fit to retain centering
+				self.scaleViewToFit(view);
+				isScaled = false;
+			}
+			
+			view.setAttributeNS(null, self.SIZE_STATE_NAME, isScaled+"");
+			isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
+		}
+		else if (self.scaleToFitOnDoubleClick) {
+			self.scaleViewToFit(view);
+		}
+		else if (self.actualSizeOnDoubleClick) {
+			self.scaleViewToActualSize(view);
+		}
+
+	}
+
+	self.scaleViewToFit = function(view) {
+		return self.setViewScaleValue(view, true);
+	}
+
+	self.scaleViewToActualSize = function(view) {
+		self.setViewScaleValue(view, false, 1);
+	}
+
+	self.onloadHandler = function(event) {
+		self.initialize();
+	}
+
+	self.setElementHTML = function(id, value) {
+		var element = self.getElement(id);
+		element.innerHTML = value;
+	}
+
+	self.getStackArray = function(error) {
+		var value = "";
+		
+		if (error==null) {
+		  try {
+			 error = new Error("Stack");
+		  }
+		  catch (e) {
+			 
+		  }
+		}
+		
+		if ("stack" in error) {
+		  value = error.stack;
+		  var methods = value.split(/\n/g);
+	 
+		  var newArray = methods ? methods.map(function (value, index, array) {
+			 value = value.replace(/\@.*/,"");
+			 return value;
+		  }) : null;
+	 
+		  if (newArray && newArray[0].includes("getStackTrace")) {
+			 newArray.shift();
+		  }
+		  if (newArray && newArray[0].includes("getStackArray")) {
+			 newArray.shift();
+		  }
+		  if (newArray && newArray[0]=="") {
+			 newArray.shift();
+		  }
+	 
+			return newArray;
+		}
+		
+		return null;
+	}
+
+	self.log = function(value) {
+		console.log.apply(this, [value]);
+	}
+	
+	// initialize on load
+	// sometimes the body size is 0 so we call this now and again later
+	window.addEventListener("load", self.onloadHandler);
+	window.document.addEventListener("DOMContentLoaded", self.onloadHandler);
+}
+
+window.application = new Application();
+</script>
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+<div id="cadastro">
+	<form th:action="@{/cadastrar}" method="POST">
+	<div id="METADATA">
+		<span>{"config":{},"type":"Artboard","theme":"Base","nodeName":"Sign Up – Desktop","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:38.979Z"}</span>
+	</div>
+	<div id="Sign_Up">
+		<div id="METADATA_l">
+			<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Sign Up","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.930Z"}</span>
+		</div>
+		<div id="Card_">
+			<div id="METADATA_n">
+				<span>{"config":{},"type":"Card","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:39.019Z","nodeName":"Card"}</span>
+			</div>
+			<svg class="Area_DISPLAY_ELEMENTSDEFAULT">
+				<rect id="Area_DISPLAY_ELEMENTSDEFAULT" rx="0" ry="0" x="0" y="0" width="1600" height="900">
+				</rect>
+			</svg>
+		</div>
+		<div id="Illustration">
+			<div id="METADATA_q">
+				<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Illustration","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:39.056Z"}</span>
+			</div>
+			<svg class="Path_FILLSTYLE1LIGHT" viewBox="0 0 540.311 400.37">
+				<path id="Path_FILLSTYLE1LIGHT" d="M 170.4804534912109 141.5875396728516 C 184.9229583740234 142.6558837890625 191.5006561279297 156.1208190917969 239.1505889892578 130.0988922119141 C 286.8003845214844 104.0772857666016 321.1481628417969 -9.43589973449707 403.3959350585938 0.6299655437469482 C 485.6438598632812 10.69544410705566 523.13916015625 56.96932983398438 537.0267944335938 140.4172058105469 C 550.9149169921875 223.8648681640625 516.8161010742188 267.5271911621094 507.8843688964844 317.4362487792969 C 498.9523010253906 367.3455200195312 418.8937683105469 434.3334045410156 295.800048828125 380.3948364257812 C 172.7058258056641 326.4562683105469 129.7433471679688 335.0800170898438 69.90245819091797 348.2550354003906 C 10.06151962280273 361.4301452636719 -28.52672386169434 291.6451416015625 26.52235794067383 207.9138336181641 C 81.57042694091797 124.182014465332 156.0374603271484 140.5194702148438 170.4804534912109 141.5875396728516 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1BRAND" viewBox="216.054 182.771 375.699 545.606">
+				<path id="Path_FILLSTYLE1BRAND" d="M 242.8709564208984 182.7716522216797 L 446.0799865722656 182.7716522216797 C 466.2771911621094 182.7716522216797 483.7785339355469 196.85888671875 488.2204895019531 216.6916198730469 L 590.89794921875 675.1282348632812 C 593.1651000976562 685.25 590.8728637695312 695.8629150390625 584.6354370117188 704.1236572265625 C 578.39794921875 712.3843994140625 568.8529052734375 717.4483642578125 558.5574951171875 717.9588623046875 L 349.6571655273438 728.3192749023438 C 326.517822265625 729.4669189453125 306.1230773925781 713.1586303710938 301.9994201660156 690.2108154296875 L 243.7545318603516 366.091064453125 L 239.4213714599609 367.3372802734375 L 228.2767028808594 305.9044799804688 L 232.7371520996094 304.7819519042969 L 216.4789123535156 214.3085021972656 C 215.0689392089844 206.4627075195312 217.2064971923828 198.3926239013672 222.3095397949219 192.2947387695312 C 227.4126892089844 186.1968383789062 234.9502868652344 182.7057495117188 242.8709564208984 182.7716522216797 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1LIGHT_t" viewBox="239.8 194.397 335.089 514.68">
+				<path id="Path_FILLSTYLE1LIGHT_t" d="M 423.0194396972656 194.3970031738281 L 446.7400512695312 194.3970031738281 C 460.7752685546875 194.3970031738281 472.9151916503906 204.2384033203125 475.9071655273438 218.04150390625 L 574.4635620117188 672.7380981445312 C 575.6117553710938 678.0354614257812 574.4089965820312 683.57373046875 571.1693725585938 687.9056396484375 C 567.9298095703125 692.2374877929688 562.975341796875 694.932861328125 557.6002807617188 695.2874755859375 L 349.3757019042969 709.0243530273438 C 337.2139892578125 709.82666015625 326.3920288085938 701.3099975585938 324.2315673828125 689.2359619140625 L 240.1327972412109 219.2628784179688 C 239.0308990478516 213.1049957275391 240.697998046875 206.7722778320312 244.6847991943359 201.9716949462891 C 248.6715850830078 197.1711578369141 254.5676574707031 194.3970031738281 260.7836608886719 194.3970031738281 L 283.2864685058594 194.3970031738281 C 287.7640380859375 194.3970031738281 291.6847534179688 197.4215240478516 292.8487548828125 201.7738037109375 L 292.848876953125 201.7738037109375 C 293.8765563964844 205.6160736083984 297.3376770019531 208.2861175537109 301.2906799316406 208.2861175537109 L 408.1191101074219 208.2861175537109 C 415.9281311035156 208.2861175537109 422.4205017089844 202.2342834472656 423.019287109375 194.3970031738281 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1BRAND_u">
+				<ellipse id="Path_FILLSTYLE1BRAND_u" rx="31.078886032104492" ry="31.283935546875" cx="31.078886032104492" cy="31.283935546875">
+				</ellipse>
+			</svg>
+			<svg class="Path_FILLSTYLE1TEXT" viewBox="715.654 692.064 20.269 28.904">
+				<path id="Path_FILLSTYLE1TEXT" d="M 730.0111083984375 695.4644775390625 L 735.9230346679688 720.9678344726562 L 721.5657958984375 720.9678344726562 L 715.6539916992188 692.0640869140625 L 730.0111083984375 695.4644775390625 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1TEXT_w" viewBox="633.654 696.064 14.357 25.504">
+				<path id="Path_FILLSTYLE1TEXT_w" d="M 648.0111694335938 696.0640258789062 L 648.0111694335938 719.8672485351562 L 633.6539306640625 721.5676879882812 L 633.6539306640625 696.0640258789062 L 648.0111694335938 696.0640258789062 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1TEXT_x" viewBox="795.577 450.459 27.87 79.058">
+				<path id="Path_FILLSTYLE1TEXT_x" d="M 823.4466552734375 451.3067016601562 C 823.4466552734375 451.3067016601562 821.7577514648438 487.8613586425781 820.0687255859375 490.4117431640625 C 818.3792114257812 492.9621276855469 803.177734375 529.5167846679688 803.177734375 529.5167846679688 L 795.5768432617188 505.7137451171875 C 795.5768432617188 505.7137451171875 807.4005126953125 486.1611633300781 805.71142578125 475.1097106933594 C 804.0222778320312 464.0582885742188 805.0863647460938 450.458984375 805.0863647460938 450.458984375 L 823.4466552734375 451.3067016601562 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1TEXT_y">
+				<ellipse id="Path_FILLSTYLE1TEXT_y" rx="23.647077560424805" ry="23.80309295654297" cx="23.647077560424805" cy="23.80309295654297">
+				</ellipse>
+			</svg>
+			<svg class="Path_FILLSTYLE1TEXT_z" viewBox="760.577 322.456 34.382 41.616">
+				<path id="Path_FILLSTYLE1TEXT_z" d="M 789.291259765625 322.4560546875 C 789.291259765625 322.4560546875 788.4466552734375 356.4604187011719 794.3582763671875 361.5611877441406 C 800.2701416015625 366.6617736816406 760.5767822265625 362.4112243652344 760.5767822265625 362.4112243652344 C 760.5767822265625 362.4112243652344 769.022216796875 338.6081237792969 762.2661743164062 333.5074768066406 C 755.5097045898438 328.4067993164062 789.291259765625 322.4560546875 789.291259765625 322.4560546875 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1FOREGROUND" viewBox="697.714 357.392 112.224 357.429">
+				<path id="Path_FILLSTYLE1FOREGROUND" d="M 748.2705688476562 365.947509765625 C 748.2705688476562 365.947509765625 753.3377075195312 356.5963439941406 760.0938720703125 357.4464721679688 C 766.850341796875 358.2966003417969 788.8084716796875 359.9967956542969 789.65283203125 361.6969909667969 C 790.49755859375 363.3971862792969 793.0308837890625 369.3480834960938 794.7201538085938 371.0481262207031 C 796.4093627929688 372.7484741210938 809.0772705078125 375.2987365722656 809.9218139648438 385.5000915527344 C 810.7660522460938 395.701416015625 779.5184936523438 457.759521484375 779.5184936523438 457.759521484375 C 779.5184936523438 457.759521484375 783.7410278320312 472.2113647460938 782.8966064453125 475.6116943359375 C 782.0521240234375 479.0122680664062 787.1190795898438 489.2135925292969 786.274658203125 493.4642333984375 C 785.43017578125 497.7146911621094 798.9428100585938 523.2179565429688 792.1864624023438 556.372314453125 L 792.1864624023438 609.92919921875 C 792.1864624023438 609.92919921875 814.989013671875 702.59130859375 808.2327880859375 709.3921508789062 C 801.4765014648438 716.19287109375 778.674072265625 711.9425659179688 774.4511108398438 709.3921508789062 C 770.2283325195312 706.8417358398438 752.4930419921875 578.4751586914062 752.4930419921875 578.4751586914062 L 744.0477294921875 535.1195068359375 L 743.2033081054688 630.3318481445312 C 743.2033081054688 630.3318481445312 744.8922729492188 710.2420654296875 738.9805908203125 712.7926025390625 C 733.0684814453125 715.3428344726562 710.2661743164062 716.19287109375 708.5770874023438 711.0921630859375 C 707.2599487304688 707.1143188476562 700.8055419921875 601.2676391601562 698.0283203125 554.87060546875 C 697.0660400390625 538.8556518554688 698.3175048828125 522.7837524414062 701.74658203125 507.1154479980469 C 705.261474609375 491.067138671875 710.3646850585938 472.2126159667969 716.1779174804688 464.5603332519531 C 727.156982421875 450.1085510253906 733.9132080078125 404.2025451660156 733.9132080078125 404.2025451660156 L 719.55615234375 377.8489990234375 C 719.55615234375 377.8489990234375 728.0015869140625 369.3480834960938 733.0684814453125 369.3480834960938 C 738.13623046875 369.3480834960938 748.2705688476562 365.947509765625 748.2705688476562 365.947509765625 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1FOREGROUND_" viewBox="805.064 383.456 22.533 63.099">
+				<path id="Path_FILLSTYLE1FOREGROUND_" d="M 821.5433349609375 383.4559936523438 L 825.996826171875 386.5074157714844 C 825.996826171875 386.5074157714844 829.1441650390625 441.2635192871094 826.6104736328125 444.6639709472656 C 824.0770263671875 448.0644226074219 806.4620361328125 446.40478515625 805.13525390625 443.4090576171875 C 803.8079833984375 440.4134521484375 821.5433349609375 383.4559936523438 821.5433349609375 383.4559936523438 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1TEXT_" viewBox="645.102 436.428 78.153 113.713">
+				<path id="Path_FILLSTYLE1TEXT_" d="M 721.3621826171875 441.1814880371094 C 723.8343505859375 458.4443359375 726.0006103515625 473.8114624023438 713.3603515625 487.714111328125 C 700.6571044921875 501.7839050292969 686.329833984375 514.2760620117188 670.6827392578125 524.9249877929688 C 669.1324462890625 529.0589599609375 646.37255859375 559.415771484375 645.21484375 547.3068237304688 C 644.05712890625 535.1978759765625 651.9205322265625 525.7047729492188 663.0950927734375 515.4649658203125 C 674.269287109375 505.2250366210938 689.902587890625 483.0074462890625 698.7235107421875 470.8165588378906 C 707.544189453125 458.6256408691406 703.912841796875 451.0235290527344 703.6065673828125 440.8407897949219 C 703.300048828125 430.6581115722656 717.893798828125 441.3047485351562 721.3621826171875 441.1814880371094 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1FOREGROUND_ba" viewBox="710.491 781.255 32.693 37.151">
+				<path id="Path_FILLSTYLE1FOREGROUND_ba" d="M 722.3870239257812 781.2553100585938 C 722.3870239257812 781.2553100585938 721.54248046875 790.7774047851562 719.0088500976562 793.32763671875 C 716.4752197265625 795.8779907226562 709.7190551757812 799.2783813476562 710.5634155273438 808.6295776367188 C 711.4080200195312 817.9810791015625 716.8975219726562 818.4059448242188 716.8975219726562 818.4059448242188 L 716.4752197265625 816.2807006835938 L 719.0088500976562 817.1307983398438 L 719.43115234375 818.4059448242188 L 743.0781860351562 818.4059448242188 C 743.0781860351562 818.4059448242188 743.5004272460938 809.4799194335938 742.6558837890625 805.2291870117188 C 741.8113403320312 800.9785766601562 741.8113403320312 780.5761108398438 739.2777099609375 781.426025390625 C 736.7440795898438 782.2762451171875 729.9877319335938 783.1263427734375 728.2986450195312 786.5269775390625 C 726.6097412109375 789.9271240234375 721.54248046875 788.7355346679688 722.3870239257812 781.2553100585938 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1FOREGROUND_bb" viewBox="801.952 781.255 32.693 37.151">
+				<path id="Path_FILLSTYLE1FOREGROUND_bb" d="M 822.74853515625 781.2553100585938 C 822.74853515625 781.2553100585938 823.5931396484375 790.7774047851562 826.126708984375 793.32763671875 C 828.660400390625 795.8779907226562 835.4166259765625 799.2783813476562 834.5718994140625 808.6295776367188 C 833.727294921875 817.9810791015625 828.2379150390625 818.4059448242188 828.2379150390625 818.4059448242188 L 828.660400390625 816.2807006835938 L 826.126708984375 817.1307983398438 L 825.7044677734375 818.4059448242188 L 802.0572509765625 818.4059448242188 C 802.0572509765625 818.4059448242188 801.635009765625 809.4799194335938 802.479736328125 805.2291870117188 C 803.32421875 800.9785766601562 803.32421875 780.5761108398438 805.857666015625 781.426025390625 C 808.3914794921875 782.2762451171875 815.147705078125 783.1263427734375 816.836669921875 786.5269775390625 C 818.5257568359375 789.9271240234375 823.5931396484375 788.7355346679688 822.74853515625 781.2553100585938 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1FOREGROUND_bc" viewBox="710.85 378.456 30.615 63.298">
+				<path id="Path_FILLSTYLE1FOREGROUND_bc" d="M 733.4216918945312 378.4561157226562 L 721.5982666015625 381.0064086914062 C 721.5982666015625 381.0064086914062 721.5982666015625 399.7087707519531 718.2200927734375 407.3597717285156 C 714.8419189453125 415.0106811523438 708.9302368164062 432.8632202148438 711.4637451171875 433.7131042480469 C 713.9972534179688 434.5633544921875 737.6445922851562 446.4649353027344 739.33349609375 439.6640319824219 C 741.0224609375 432.8632202148438 745.2453002929688 378.4561157226562 733.4216918945312 378.4561157226562 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1BRAND_">
+				<ellipse id="Path_FILLSTYLE1BRAND_" rx="31.078886032104492" ry="31.283935546875" cx="31.078886032104492" cy="31.283935546875">
+				</ellipse>
+			</svg>
+			<svg class="Path_FILLSTYLE1BRAND_ba" viewBox="798.656 255.914 61.919 40.213">
+				<path id="Path_FILLSTYLE1BRAND_ba" d="M 846.6500854492188 285.1700134277344 C 838.488037109375 291.1083679199219 827.9733276367188 292.6975402832031 818.4384765625 289.4340515136719 C 808.9034423828125 286.170654296875 801.530517578125 278.4591674804688 798.6563720703125 268.7433166503906 C 800.1175537109375 280.4427490234375 807.9896240234375 290.3212585449219 819.018798828125 294.2954406738281 C 830.0477294921875 298.2694702148438 842.3594360351562 295.6641845703125 850.8648681640625 287.5562744140625 C 859.3706665039062 279.4483947753906 862.6250610351562 267.2154846191406 859.2826538085938 255.9140319824219 C 860.7008666992188 267.2572631835938 855.8570556640625 278.4753112792969 846.6500854492188 285.1701354980469 Z">
+				</path>
+			</svg>
+			<svg class="Path_FILLSTYLE1BRAND_bb">
+				<ellipse id="Path_FILLSTYLE1BRAND_bb" rx="22.79119110107422" ry="22.941556930541992" cx="22.79119110107422" cy="22.941556930541992">
+				</ellipse>
+			</svg>
+			<svg class="Path_FILLSTYLE1BRAND_bc">
+				<ellipse id="Path_FILLSTYLE1BRAND_bc" rx="20.201278686523438" ry="15.902667999267578" cx="20.201278686523438" cy="15.902667999267578">
+				</ellipse>
+			</svg>
+			<svg class="Path_FILLSTYLE1TEXT_ba">
+				<ellipse id="Path_FILLSTYLE1TEXT_ba" rx="3.834010601043701" ry="6.8280110359191895" cx="3.834010601043701" cy="6.8280110359191895">
+				</ellipse>
+			</svg>
+		</div>
+		<div id="Button_">
+			<div id="METADATA_bc">
+				<span>{"config":{},"type":"Button","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:39.455Z","nodeName":"Button"}</span>
+			</div>
+			<div class="btn-group" role="group" aria-label="Checkbox Group do tipo Conta" style="position: relative; top: 82px; left: 00px; width: 328px; height: 48px; border-color:#FA721E !important;">
+				<input type="checkbox" class="btn-check" id="btncheck1" name="correnteBool" autocomplete="off" th:checked="${conta.correnteBool}">
+				<label class="btn btn-outline-primary" for="btncheck1" style="color: #FA721E; border-color:#FA721E; border-style: solid; border-width: 2px; font-family: Bradesco Sans; font-style: normal; font-weight: bold; font-size: 16px;">Conta Corrente</label>
+
+				<input type="checkbox" class="btn-check" id="btncheck2" name="poupancaBool" autocomplete="off" th:checked="${conta.poupancaBool}">
+				<label class="btn btn-outline-primary" for="btncheck2" style="color: #FA721E; border-color:#FA721E;border-style: solid; border-width: 2px; font-family: Bradesco Sans; font-style: normal; font-weight: bold; font-size: 16px;">Conta Poupança</label>
+			</div>
+			<a href="/">
+				<input class="Botao" type="submit" value="Cadastrar" onclick="if(!this.form.correnteBool.checked && !this.form.poupancaBool.checked){alert('Selecione Pelo Menos UM Tipo de Conta');return false}">
+			</a>
+			<div id="Icon_">
+				<div id="METADATA_bg">
+					<span>{"config":{"STATE":"DEFAULT"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:39.372Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSLabelICON">
+					<rect id="Area_DISPLAY_ELEMENTSLabelICON" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon">
+					<svg class="Path" viewBox="1.29 2.499 17.42 15.193">
+						<path id="Path" d="M 17.36700057983398 3.842000007629395 C 15.57699966430664 2.051000118255615 12.67300033569336 2.051000118255615 10.88300037384033 3.842000007629395 L 10 4.724999904632568 L 9.116999626159668 3.842000007629395 C 7.326000213623047 2.051000118255615 4.423999786376953 2.051000118255615 2.632999897003174 3.842000007629395 C 0.8429999947547913 5.631999969482422 0.8429999947547913 8.534999847412109 2.632999897003174 10.32499980926514 L 3.516999959945679 11.20800018310547 L 10 17.6919994354248 L 16.48299980163574 11.20800018310547 L 17.36700057983398 10.32499980926514 C 19.15800094604492 8.534999847412109 19.15800094604492 5.631999969482422 17.36700057983398 3.842000007629395 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div id="Input_">
+			<div id="METADATA_bl">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.692Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoUm" style="text-indent: 5px;" type="date" name="dataString" th:value="${cliente.dataString}">
+			<div id="Icon__bo">
+				<div id="METADATA_bp">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.545Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_br">
+					<svg class="Path_bs">
+						<ellipse id="Path_bs" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line" viewBox="0 0 3.625 3.625">
+						<path id="Line" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_bu">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__bv">
+			<div id="METADATA_bw">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.692Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoDois" pattern="[0-9]*" type="text" placeholder="Numero" name="numero" th:value="${endereco.numero}">
+			<div id="Icon__bz">
+				<div id="METADATA_b">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.545Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_b">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_b" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_b">
+					<svg class="Path_b">
+						<ellipse id="Path_b" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_b" viewBox="0 0 3.625 3.625">
+						<path id="Line_b" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_b">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__b">
+			<div id="METADATA_ca">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.692Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoTres" pattern="[a-zA-Z ]*" type="text" placeholder="Cidade" name="cidade" th:value="${endereco.cidade}">
+			<div id="Icon__ca">
+				<div id="METADATA_cb">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.545Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_cc">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_cc" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_cd">
+					<svg class="Path_ce">
+						<ellipse id="Path_ce" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_cf" viewBox="0 0 3.625 3.625">
+						<path id="Line_cf" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_cg">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__ch">
+			<div id="METADATA_ci">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.692Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoTres" pattern="[0-9]{5}-[0-9]{3}" type="text" placeholder="CEP" name="cep" th:value="${endereco.cep}" style="text-">
+			<div id="Icon__cl">
+				<div id="METADATA_cm">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.545Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_cn">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_cn" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_co">
+					<svg class="Path_cp">
+						<ellipse id="Path_cp" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_cq" viewBox="0 0 3.625 3.625">
+						<path id="Line_cq" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_cr">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__cs">
+			<div id="METADATA_ct">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.066Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoUm" type="text" placeholder="Senha" name="senha" th:value="${conta.senha}">
+			<div id="Icon__cw">
+				<div id="METADATA_cx">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.878Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_cy">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_cy" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_cz">
+					<svg class="Path_c">
+						<ellipse id="Path_c" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_c" viewBox="0 0 3.625 3.625">
+						<path id="Line_c" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_c">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__c">
+			<div id="METADATA_c">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.066Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoUm" pattern="[a-zA-Z0-9 ]*" type="text" placeholder="Logradouro" name="logradouro" th:value="${endereco.logradouro}">
+			<div id="Icon__c">
+				<div id="METADATA_da">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.878Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_c">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_c" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_da">
+					<svg class="Path_db">
+						<ellipse id="Path_db" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_dc" viewBox="0 0 3.625 3.625">
+						<path id="Line_dc" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_dd">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__de">
+			<div id="METADATA_df">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.066Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoUm" pattern="[a-zA-Z ]*" type="text" placeholder="Bairro" name="bairro" th:value="${endereco.bairro}">
+			<div id="Icon__di">
+				<div id="METADATA_dj">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.878Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_dk">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_dk" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_dl">
+					<svg class="Path_dm">
+						<ellipse id="Path_dm" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_dn" viewBox="0 0 3.625 3.625">
+						<path id="Line_dn" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_do">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__dp">
+			<div id="METADATA_dq">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.066Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoDois" pattern="[A-Z]{2}" type="text" placeholder="Estado" name="estado" th:value="${endereco.estado}">
+			<div id="Icon__dt">
+				<div id="METADATA_du">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.878Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_dv">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_dv" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_dw">
+					<svg class="Path_dx">
+						<ellipse id="Path_dx" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_dy" viewBox="0 0 3.625 3.625">
+						<path id="Line_dy" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_dz">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__d">
+			<div id="METADATA_d">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.066Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoUm" pattern="[0-9]{3}[.][0-9]{3}[.][0-9]{3}[-][0-9]{2}" type="text" placeholder="CPF" name="cpf" th:value="${cliente.cpf}">
+<!--			<input class="entradaTipoUm" type="text" placeholder="CPF" name="cpf" th:value="${cliente.CPF}">-->
+			<div id="Icon__d">
+				<div id="METADATA_ea">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.878Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_d">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_d" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_d">
+					<svg class="Path_d">
+						<ellipse id="Path_d" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_d" viewBox="0 0 3.625 3.625">
+						<path id="Line_d" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_ea">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__eb">
+			<div id="METADATA_ec">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.066Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoUm" pattern="[+]{1}[0-9]*[(]{1}[0-9]{2}[)]{1}[0-9]{5}-[0-9]{4}" type="text" placeholder="Telefone: +55(21)98765-4321" name="telefone" th:value="${cliente.telefone}">
+			<div id="Icon__ef">
+				<div id="METADATA_eg">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.878Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_eh">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_eh" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_ei">
+					<svg class="Path_ej">
+						<ellipse id="Path_ej" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_ek" viewBox="0 0 3.625 3.625">
+						<path id="Line_ek" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_el">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__em">
+			<div id="METADATA_en">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.066Z","nodeName":"Input"}</span>
+			</div>
+			oi cla
+			oi
+			<input class="entradaTipoUm" pattern="[a-zA-Z ]*" type="text" placeholder="Nome Completo" name="nome" th:value="${cliente.nome}">
+			<div id="Icon__eq">
+				<div id="METADATA_er">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.878Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_es">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_es" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_et">
+					<svg class="Path_eu">
+						<ellipse id="Path_eu" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_ev" viewBox="0 0 3.625 3.625">
+						<path id="Line_ev" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_ew">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__ex">
+			<div id="METADATA_ey">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.066Z","nodeName":"Input"}</span>
+			</div>
+			<input class="entradaTipoUm" pattern="[a-zA-Z0-9_.]+[@]{1}[a-z]+[.]{1}[a-z]+[a-z.]*" type="text" placeholder="Endereço de Email" name="email" th:value="${cliente.email}">
+			<div id="Icon__e">
+				<div id="METADATA_e">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.878Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_e">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_e" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_e">
+					<svg class="Path_e">
+						<ellipse id="Path_e" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_e" viewBox="0 0 3.625 3.625">
+						<path id="Line_e" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_e">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__e">
+			<div id="METADATA_fa">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.381Z","nodeName":"Input"}</span>
+			</div>
+			<div id="Icon__fa">
+				<div id="METADATA_fb">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.198Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSDefaultIC_fc">
+					<rect id="Area_DISPLAY_ELEMENTSDefaultIC_fc" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon_fd">
+					<svg class="Path_fe">
+						<ellipse id="Path_fe" rx="6.666666507720947" ry="6.666666507720947" cx="6.666666507720947" cy="6.666666507720947">
+						</ellipse>
+					</svg>
+					<svg class="Line_ff" viewBox="0 0 3.625 3.625">
+						<path id="Line_ff" d="M 3.625 3.625 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_fg">
+				<span>Label</span>
+			</div>
+		</div>
+		<a href="/login">
+			<div id="Create_an_account_TAGA">
+				<span>Faça Login</span>
+			</div>
+		</a>
+		<div id="New_user_TAGH6">
+			<span>Já Possui Conta?</span>
+		</div>
+		<div id="New_user_TAGH6_fj">
+			<span>Dados Pessoais:</span>
+		</div>
+		<div id="New_user_TAGH6_fk">
+			<span>Endereço:</span>
+		</div>
+		<div id="Title_TAGH4">
+			<span>Criação de conta</span>
+		</div>
+		<div id="Circle_Button_">
+			<div id="METADATA_fn">
+				<span>{"config":{"STYLE":"STYLE2"},"type":"CircleButton","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.882Z","nodeName":"Circle Button"}</span>
+			</div>
+			<div id="Icon__fo">
+				<div id="METADATA_fp">
+					<span>{"config":{"STATE":"DEFAULT","STYLE":"STYLE2","ICON":"feather/x"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.826Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area_ICONfeatherxSIZEMEDIUMSTA">
+					<rect id="Area_ICONfeatherxSIZEMEDIUMSTA" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+			</div>
+			<div id="Grupo_15">
+				<a href="/">
+					<svg class="Area_SIZEMEDIUMSTATEDEFAULTSTY">
+						<rect id="Area_SIZEMEDIUMSTATEDEFAULTSTY" rx="24" ry="24" x="0" y="0" width="48" height="48">
+						</rect>
+					</svg>
+				</a>
+				<div id="x">
+					<svg class="Caminho_1" viewBox="8.998 8.998 10 10">
+						<path id="Caminho_1" d="M 18.81409454345703 9.18206787109375 C 18.93162155151367 9.299297332763672 18.9976692199707 9.458475112915039 18.9976692199707 9.624473571777344 C 18.9976692199707 9.790472030639648 18.93162155151367 9.949648857116699 18.81409454345703 10.06687927246094 C 18.81409454345703 10.06687927246094 15.39659309387207 13.48444175720215 13.20959949493408 15.67147541046143 C 11.02260589599609 17.8585090637207 10.06612014770508 18.81501197814941 10.06612014770508 18.81501197814941 C 9.82179069519043 19.05934524536133 9.425655364990234 19.05934524536133 9.181325912475586 18.81501197814941 C 8.936996459960938 18.5706787109375 8.936996459960938 18.17453384399414 9.181325912475586 17.93020057678223 L 17.92930030822754 9.18206787109375 C 18.04652786254883 9.064540863037109 18.20570373535156 8.998489379882812 18.3716983795166 8.998489379882812 C 18.53769302368164 8.998489379882812 18.69686889648438 9.064540863037109 18.81409645080566 9.18206787109375 Z">
+						</path>
+					</svg>
+					<svg class="Caminho_2" viewBox="8.998 8.998 10 10">
+						<path id="Caminho_2" d="M 9.182064056396484 9.18206787109375 C 9.064538955688477 9.299297332763672 8.998489379882812 9.458475112915039 8.998489379882812 9.624473571777344 C 8.998489379882812 9.790472030639648 9.064538955688477 9.949648857116699 9.182064056396484 10.06687927246094 L 17.93003845214844 18.81501197814941 C 18.17436790466309 19.05934524536133 18.57050323486328 19.05934524536133 18.81483268737793 18.81501197814941 C 19.05916213989258 18.5706787109375 19.05916213989258 18.17453575134277 18.81483268737793 17.93020057678223 L 10.06685924530029 9.18206787109375 C 9.949630737304688 9.064540863037109 9.790457725524902 8.998489379882812 9.624462127685547 8.998489379882812 C 9.458465576171875 8.998489379882812 9.299291610717773 9.064540863037109 9.182064056396484 9.18206787109375 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+	</form>
+</div>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d9f94167e6ff673',m:'HzXl6CZpwCdWWSUxU8f2oi9QS8db2.m75YzVpT63zr8-1644267948-0-AczcRtqZqP+hAxwE11ux9LKRJhpnvaZswaaEcM5AH156njvqf6jf7JImURpqJ1mnGp+DKPFdSydGH+DvyX7vDuI3FAmWNX80ozOEe7mLe0hhN8TeVJcl2ZynzDXHIfAHX7bIE2eAcpWcKtbfqLE4Pf+v9kpTcCNwIukQflMIgbJN7hKDXTVtFzYUIt7vCGeBS2v+HKkrRITU1kkHkHQLnM0=',s:[0x26c9fa618c,0xe0ca15dd9e],}})();</script></body>
+</html>
