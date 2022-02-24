@@ -81,6 +81,9 @@ public class ContaService {
     }
 
     public boolean transferir(double valor, Conta externa){
+        if(conta.equals(externa)){
+            return false;
+        }
         if(conta.getTipoConta().equals(externa.getTipoConta())){
             if(conta.getSaldo() < valor){
                 return false;

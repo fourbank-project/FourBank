@@ -64,7 +64,7 @@ public class HomeController {
             model.addAttribute("endereco", endereco);
             return "cadastro";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -103,7 +103,7 @@ public class HomeController {
             System.out.println("Eh nois");
             return "home";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -122,7 +122,7 @@ public class HomeController {
             model.addAttribute("poupanca", poupanca);
             return "login";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -166,7 +166,7 @@ public class HomeController {
                 }
             }
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -182,7 +182,7 @@ public class HomeController {
             model.addAttribute("cpfExterno",cpfExterno);
             return "iniciar";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -209,7 +209,7 @@ public class HomeController {
             }
             return "transacoes";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -219,7 +219,7 @@ public class HomeController {
             model.addAttribute("contasuprema",contaLogada);
             return "depositar";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -229,7 +229,7 @@ public class HomeController {
             model.addAttribute("contasuprema",contaLogada);
             return "saque";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -239,7 +239,7 @@ public class HomeController {
             model.addAttribute("contasuprema", contaLogada);
             return "transferir";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -252,7 +252,7 @@ public class HomeController {
             System.out.println(contaLogadinha);
             return "depositar";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -264,7 +264,7 @@ public class HomeController {
             contaRepository.save(contaLogada);
             return "redirect:/menu";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -276,7 +276,7 @@ public class HomeController {
             }
             return "saque";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -288,7 +288,7 @@ public class HomeController {
             contaRepository.save(contaLogada);
             return "redirect:/menu";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -300,7 +300,7 @@ public class HomeController {
             }
             return "transferir"; // Página HTML
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -330,6 +330,7 @@ public class HomeController {
                     break;
                 }
             }
+            System.out.println(conta.getSaldo());
             if(conta == null){
                 System.out.println("Dados Incorretos!");
                 return "redirect:/menu/transacoes/transferir/";
@@ -344,7 +345,7 @@ public class HomeController {
             contaRepository.save(conta);
             return "redirect:/menu";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -362,7 +363,7 @@ public class HomeController {
             }
             return "pix";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -375,7 +376,7 @@ public class HomeController {
             }
             return "cadastrapix";
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -398,7 +399,7 @@ public class HomeController {
             return "cadastrapix";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -500,7 +501,7 @@ public class HomeController {
             return "pix";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -546,7 +547,7 @@ public class HomeController {
             return "consultachave";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -560,7 +561,7 @@ public class HomeController {
             return "tranferirpix";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -583,7 +584,7 @@ public class HomeController {
             return "pix";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -598,7 +599,7 @@ public class HomeController {
             return "consultachave";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -611,7 +612,7 @@ public class HomeController {
             return "transferirpix";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -630,7 +631,7 @@ public class HomeController {
             return "cartoes";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -675,7 +676,7 @@ public class HomeController {
             return "credito";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -695,7 +696,7 @@ public class HomeController {
             return "redirect:/menu";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -709,7 +710,7 @@ public class HomeController {
             return "redirect:/credito";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -730,7 +731,7 @@ public class HomeController {
             return "solicitarcartaocredito";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -748,7 +749,7 @@ public class HomeController {
             return "redirect:/credito";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -771,7 +772,7 @@ public class HomeController {
             return "redirect:/credito";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -793,7 +794,7 @@ public class HomeController {
             return "compras";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -810,7 +811,7 @@ public class HomeController {
             return "redirect:/credito";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -830,7 +831,7 @@ public class HomeController {
             return "redirect:/credito";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -847,7 +848,7 @@ public class HomeController {
             return "debito";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -869,7 +870,7 @@ public class HomeController {
             return "seguros";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -885,7 +886,7 @@ public class HomeController {
             return "seguros";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -914,7 +915,7 @@ public class HomeController {
             return "segurodevida";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -942,7 +943,7 @@ public class HomeController {
             return "segurodesemprego";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -969,7 +970,7 @@ public class HomeController {
             return "seguroinvalidez";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
@@ -1016,7 +1017,7 @@ public class HomeController {
                 return "redirect:/seguros";
 
         } catch (Exception e) {
-            return "/erro";
+            return "erro";
         }
     }
 
