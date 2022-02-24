@@ -79,7 +79,6 @@ src: url('/fonts/nunitoMedium.ttf');
 font-weight: Medium;
 }
 @font-face {
-font-family: "Icons";
+font-family: "NextBrandIcons";
 src: url('/fonts/Icons.ttf');
-font-weight: Medium;
 }
