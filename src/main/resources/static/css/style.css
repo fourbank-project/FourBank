@@ -79,7 +79,7 @@ src: url('/fonts/nunitoMedium.ttf');
 font-weight: Medium;
 }
 @font-face {
-font-family: "Nunito Medium";
-src: url('/fonts/nunitoMedium.ttf');
+font-family: "Icons";
+src: url('/fonts/Icons.ttf');
 font-weight: Medium;
 }
