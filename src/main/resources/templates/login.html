@@ -4014,7 +4014,7 @@ window.application = new Application();
 			<div id="METADATA_bb">
 				<span>{"config":{},"type":"Button","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:26.773Z","nodeName":"Button"}</span>
 			</div>
-			<input class="Botao" type="submit" value="Entrar" onclick="if(!this.form.corrente.checked && !this.form.poupanca.checked){alert('Selecione UM Tipo de Conta');return false}">
+			<input class="Botao" type="submit" value="Entrar" onclick="if((!this.form.corrente.checked && !this.form.poupanca.checked) || (this.form.corrente.checked && this.form.poupanca.checked)){alert('Selecione o tipo da conta que deseja acessar...');return false}">
 			<div id="Icon_">
 				<div id="METADATA_bf">
 					<span>{"config":{"STATE":"DEFAULT"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:26.768Z","nodeName":"Icon"}</span>
