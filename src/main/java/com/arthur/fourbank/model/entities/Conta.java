@@ -43,7 +43,7 @@ public class Conta implements Serializable {
     public Conta() {
     }
 
-    public Conta(double saldo, String senha, Cliente cliente, TipoConta tipoConta, CartaoCredito cartaoCredito, CartaoDebito cartaoDebito, double taxa, Date dataTaxa) {
+    public Conta(Double saldo, String senha, Cliente cliente, TipoConta tipoConta, CartaoCredito cartaoCredito, CartaoDebito cartaoDebito, Double taxa, Date dataTaxa) {
         this.saldo = saldo;
         this.senha = senha;
         this.cliente = cliente;
@@ -152,13 +152,6 @@ public class Conta implements Serializable {
 
     public Conta clone(){
         return new Conta(this.saldo,this.senha, this.cliente,this.tipoConta,this.cartaoCredito,this.cartaoDebito,this.taxa,this.dataTaxa);
-    }
-
-    @Override
-    public String toString() {
-        return "Nome: " + getCliente().getNome() +
-                " CPF: " + getCliente().getCpf() +
-                " Conta: " + getTipoConta().name();
     }
 
     @Override
