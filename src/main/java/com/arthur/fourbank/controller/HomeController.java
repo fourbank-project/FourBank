@@ -653,19 +653,19 @@ public class HomeController {
                 statusCartao = "Opção Indisponível";
                 fatura = "Opção Indisponível";
                 seguros = "Opção Indisponível";
-                iconeCadeado = "\uE95F";
+                iconeCadeado = "";
             }else if(contaLogada.getCartaoCredito().isAtivo()){
                 compras = "Fazer Compras";
                 statusCartao = "Bloquear Cartão";
                 seguros = "Seguros";
                 fatura = "Pagar Fatura: R$ "+contaLogada.getCartaoCredito().getValorFatura();
-                iconeCadeado = "\uE951";
+                iconeCadeado = "";
             }else{
                 compras = "Compras Bloqueadas";
                 seguros = "Seguros Bloqueados";
                 statusCartao = "Desbloquear Cartão";
                 fatura = "Pagamento Bloqueado";
-                iconeCadeado = "\uE950";
+                iconeCadeado = "";
             }
 
             model.addAttribute("compras",compras);

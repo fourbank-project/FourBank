@@ -78,7 +78,3 @@ font-family: "Nunito Medium";
 src: url('/fonts/nunitoMedium.ttf');
 font-weight: Medium;
 }
-@font-face {
-font-family: "NextBrandIcons";
-src: url('/fonts/Icons.ttf');
-}
