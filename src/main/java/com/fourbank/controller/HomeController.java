@@ -1,13 +1,11 @@
 package com.fourbank.controller;
 
-import com.arthur.fourbank.model.entities.*;
+import com.fourbank.model.entities.*;
 import com.fourbank.model.enums.TipoChavePix;
 import com.fourbank.model.enums.TipoConta;
-import com.arthur.fourbank.model.repositories.*;
 import com.fourbank.model.repositories.*;
 import com.fourbank.model.services.ContaService;
 import com.fourbank.model.services.PixService;
-import com.fourbank.model.entities.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +17,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 
+@SuppressWarnings("ALL")
 @Controller
 public class HomeController {
 
@@ -143,11 +142,11 @@ public class HomeController {
             }
             Conta conta = new Conta();
             for (Conta contaVer : list) {
-                if (contaVer.getTipoConta().equals(TipoConta.CORRENTE) && corrente == true) {
+                if (contaVer.getTipoConta().equals(TipoConta.CORRENTE) && corrente) {
                     System.out.println("Achei sua conta!");
                     conta = contaVer;
                     break;
-                } else if (contaVer.getTipoConta().equals(TipoConta.POUPANCA) && poupanca == true) {
+                } else if (contaVer.getTipoConta().equals(TipoConta.POUPANCA) && poupanca) {
                     System.out.println("Achei sua conta!");
                     conta = contaVer;
                     break;

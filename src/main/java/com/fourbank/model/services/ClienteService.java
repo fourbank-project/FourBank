@@ -1,12 +1,11 @@
 package com.fourbank.model.services;
 
-import com.arthur.fourbank.model.entities.*;
+import com.fourbank.model.entities.*;
 import com.fourbank.model.enums.TipoChavePix;
 import com.fourbank.model.enums.TipoConta;
 import com.fourbank.model.repositories.ClienteRepository;
 import com.fourbank.model.repositories.ContaRepository;
 import com.fourbank.model.repositories.PixRepository;
-import com.fourbank.model.entities.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +13,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+@SuppressWarnings("unused")
 @Service
 public class
 ClienteService {
@@ -60,10 +60,9 @@ ClienteService {
     }
 
     // Validation Methods
-
     public Cliente findById(Long id) {
         Optional<Cliente> optional = repository.findById(id);
-        return optional.get();
+        return optional.orElse(null);
     }
 
     public Cliente getCliente() {

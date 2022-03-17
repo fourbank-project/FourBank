@@ -1,7 +1,7 @@
 package com.fourbank.model.entities;
 
-import com.fourbank.model.enums.TipoOperadora;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fourbank.model.enums.TipoOperadora;
 
 import javax.persistence.*;
 import java.io.Serializable;

@@ -1,18 +1,17 @@
 package com.fourbank.config;
 
-import com.arthur.fourbank.model.entities.*;
+import com.fourbank.model.entities.*;
 import com.fourbank.model.enums.TipoChavePix;
 import com.fourbank.model.enums.TipoConta;
-import com.arthur.fourbank.model.repositories.*;
 import com.fourbank.model.repositories.*;
 import com.fourbank.model.services.ClienteService;
 import com.fourbank.model.services.ContaService;
-import com.fourbank.model.entities.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -77,7 +76,7 @@ public class DBInserts implements CommandLineRunner {
                 "Arthur",
                 hoje,
                 endereco1,
-                "arthur@gmail.com",
+                "gmail.com",
                 "+55(21)99999-9999").getCliente();
 
         Cliente cliente2 = new ClienteService(

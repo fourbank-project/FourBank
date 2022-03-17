@@ -6,7 +6,8 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link crossorigin="anonymous"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
           rel="stylesheet">
     <title>cadastro</title>
     <style id="applicationStylesheet" type="text/css">
@@ -2678,6 +2679,7 @@
 		top: 0px;
 		transform: matrix(1,0,0,1,0,0);
 	}
+
 
     </style>
     <script id="applicationScript">
@@ -5590,6 +5592,7 @@ var Application = function() {
 
 window.application = new Application();
 
+
     </script>
     <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
 </head>
@@ -5723,20 +5726,24 @@ window.application = new Application();
                 </div>
                 <div aria-label="Checkbox Group do tipo Conta" class="btn-group" role="group"
                      style="position: relative; top: 82px; left: 00px; width: 328px; height: 48px; border-color:#FA721E !important;">
-                    <input autocomplete="off" class="btn-check" id="btncheck1" name="correnteBool" th:checked="${conta.correnteBool}"
+                    <input autocomplete="off" class="btn-check" id="btncheck1" name="correnteBool"
+                           th:checked="${conta.correnteBool}"
                            type="checkbox">
                     <label class="btn btn-outline-primary" for="btncheck1"
                            style="color: #FA721E; border-color:#FA721E; border-style: solid; border-width: 2px; font-family: Bradesco Sans; font-style: normal; font-weight: bold; font-size: 16px;">Conta
                         Corrente</label>
 
-                    <input autocomplete="off" class="btn-check" id="btncheck2" name="poupancaBool" th:checked="${conta.poupancaBool}"
+                    <input autocomplete="off" class="btn-check" id="btncheck2" name="poupancaBool"
+                           th:checked="${conta.poupancaBool}"
                            type="checkbox">
                     <label class="btn btn-outline-primary" for="btncheck2"
                            style="color: #FA721E; border-color:#FA721E;border-style: solid; border-width: 2px; font-family: Bradesco Sans; font-style: normal; font-weight: bold; font-size: 16px;">Conta
                         Poupança</label>
                 </div>
                 <a href="/">
-                    <input class="Botao" onclick="if(!this.form.correnteBool.checked && !this.form.poupancaBool.checked){alert('Selecione Pelo Menos UM Tipo de Conta');return false}" type="submit"
+                    <input class="Botao"
+                           onclick="if(!this.form.correnteBool.checked && !this.form.poupancaBool.checked){alert('Selecione Pelo Menos UM Tipo de Conta');return false}"
+                           type="submit"
                            value="Cadastrar">
                 </a>
                 <div id="Icon_">
@@ -5760,7 +5767,8 @@ window.application = new Application();
                 <div id="METADATA_bl">
                     <span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.692Z","nodeName":"Input"}</span>
                 </div>
-                <input class="entradaTipoUm" name="dataString" style="text-indent: 5px;" th:value="${cliente.dataString}"
+                <input class="entradaTipoUm" name="dataString" style="text-indent: 5px;"
+                       th:value="${cliente.dataString}"
                        type="date">
                 <div id="Icon__bo">
                     <div id="METADATA_bp">
@@ -5790,7 +5798,8 @@ window.application = new Application();
                 <div id="METADATA_bw">
                     <span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.692Z","nodeName":"Input"}</span>
                 </div>
-                <input class="entradaTipoDois" name="numero" pattern="[0-9]*" placeholder="Numero" th:value="${endereco.numero}"
+                <input class="entradaTipoDois" name="numero" pattern="[0-9]*" placeholder="Numero"
+                       th:value="${endereco.numero}"
                        type="text">
                 <div id="Icon__bz">
                     <div id="METADATA_b">
@@ -5820,7 +5829,8 @@ window.application = new Application();
                 <div id="METADATA_ca">
                     <span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:40.692Z","nodeName":"Input"}</span>
                 </div>
-                <input class="entradaTipoTres" name="cidade" pattern="[a-zA-Z ]*" placeholder="Cidade" th:value="${endereco.cidade}"
+                <input class="entradaTipoTres" name="cidade" pattern="[a-zA-Z ]*" placeholder="Cidade"
+                       th:value="${endereco.cidade}"
                        type="text">
                 <div id="Icon__ca">
                     <div id="METADATA_cb">
@@ -5939,7 +5949,8 @@ window.application = new Application();
                 <div id="METADATA_df">
                     <span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.066Z","nodeName":"Input"}</span>
                 </div>
-                <input class="entradaTipoUm" name="bairro" pattern="[a-zA-Z ]*" placeholder="Bairro" th:value="${endereco.bairro}"
+                <input class="entradaTipoUm" name="bairro" pattern="[a-zA-Z ]*" placeholder="Bairro"
+                       th:value="${endereco.bairro}"
                        type="text">
                 <div id="Icon__di">
                     <div id="METADATA_dj">
@@ -5969,7 +5980,8 @@ window.application = new Application();
                 <div id="METADATA_dq">
                     <span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-07T12:59:41.066Z","nodeName":"Input"}</span>
                 </div>
-                <input class="entradaTipoDois" name="estado" pattern="[A-Z]{2}" placeholder="Estado" th:value="${endereco.estado}"
+                <input class="entradaTipoDois" name="estado" pattern="[A-Z]{2}" placeholder="Estado"
+                       th:value="${endereco.estado}"
                        type="text">
                 <div id="Icon__dt">
                     <div id="METADATA_du">
@@ -6062,7 +6074,8 @@ window.application = new Application();
                 </div>
                 oi cla
                 oi
-                <input class="entradaTipoUm" name="nome" pattern="[a-zA-Z ]*" placeholder="Nome Completo" th:value="${cliente.nome}"
+                <input class="entradaTipoUm" name="nome" pattern="[a-zA-Z ]*" placeholder="Nome Completo"
+                       th:value="${cliente.nome}"
                        type="text">
                 <div id="Icon__eq">
                     <div id="METADATA_er">
@@ -6203,6 +6216,7 @@ window.application = new Application();
 </div>
 <script type="text/javascript">
     (function(){window['__CF$cv$params']={r:'6d9f94167e6ff673',m:'HzXl6CZpwCdWWSUxU8f2oi9QS8db2.m75YzVpT63zr8-1644267948-0-AczcRtqZqP+hAxwE11ux9LKRJhpnvaZswaaEcM5AH156njvqf6jf7JImURpqJ1mnGp+DKPFdSydGH+DvyX7vDuI3FAmWNX80ozOEe7mLe0hhN8TeVJcl2ZynzDXHIfAHX7bIE2eAcpWcKtbfqLE4Pf+v9kpTcCNwIukQflMIgbJN7hKDXTVtFzYUIt7vCGeBS2v+HKkrRITU1kkHkHQLnM0=',s:[0x26c9fa618c,0xe0ca15dd9e],}})();
+
 </script>
 </body>
 </html>
