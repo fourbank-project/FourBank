@@ -1,0 +1,89 @@
+# managed-by: development-hq-governance
+name: Work item
+description: Create a standardized work item
+title: ""
+labels:
+  - "policy:needs-triage"
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Choose exactly one work item type.
+      options:
+        - Epic
+        - Feature
+        - Bug
+        - Task
+        - Tech Debt
+        - Research
+    validations:
+      required: true
+
+  - type: dropdown
+    id: areas
+    attributes:
+      label: Areas
+      description: Choose every technical area affected by this work.
+      multiple: true
+      options:
+        - Frontend
+        - Backend
+        - Design System
+        - Mobile
+        - Infra
+        - Docs
+        - Security
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What needs to change and why?
+      placeholder: Describe the problem, outcome, or work to be done.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this item to be considered complete?
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: false
+
+  - type: textarea
+    id: blocked_by
+    attributes:
+      label: Blocked by
+      description: Optional. Add issue URLs, owner/repo#123, or #123 references that must be completed first.
+      placeholder: |
+        #123
+        owner/repo#456
+        https://github.com/owner/repo/issues/789
+    validations:
+      required: false
+
+  - type: textarea
+    id: blocking
+    attributes:
+      label: Blocking
+      description: Optional. Add issue URLs, owner/repo#123, or #123 references that this item blocks.
+      placeholder: |
+        #234
+        owner/repo#567
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Optional links, screenshots, implementation notes, or background.
+    validations:
+      required: false
