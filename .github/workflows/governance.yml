@@ -1,0 +1,14 @@
+# managed-by: development-hq-governance
+name: Governance
+
+on:
+  issues:
+    types: [opened, edited, reopened, labeled, unlabeled]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  reconcile:
+    uses: joaovpimenta/joaovpimenta/.github/workflows/governance-event.yml@main
