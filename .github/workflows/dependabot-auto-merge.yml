@@ -1,0 +1,14 @@
+# managed-by: development-hq-governance
+name: Dependabot Auto-Merge
+
+on:
+  pull_request_target:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dependabot-auto-merge:
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    uses: joaovpimenta/joaovpimenta/.github/workflows/dependabot-auto-merge.yml@governance-v1.0.0
