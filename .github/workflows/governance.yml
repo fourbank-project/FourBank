@@ -11,4 +11,4 @@ permissions:
 
 jobs:
   reconcile:
-    uses: joaovpimenta/joaovpimenta/.github/workflows/governance-event.yml@main
+    uses: joaovpimenta/joaovpimenta/.github/workflows/governance-event.yml@governance-v1.0.0
